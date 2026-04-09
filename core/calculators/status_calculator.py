@@ -17,7 +17,10 @@ from core.models.status import StatusData
 from core.models.weapon import Weapon
 from core.server_profiles import get_profile
 
-_GUN_WEAPON_TYPES = frozenset({"Revolver", "Rifle", "Gatling", "Shotgun", "Grenade"})
+_GUN_WEAPON_TYPES    = frozenset({"Revolver", "Rifle", "Gatling", "Shotgun", "Grenade"})
+_ADRENALINE_WEAPONS  = frozenset({"1HAxe", "2HAxe", "Mace"})
+# skill_db.conf: BS_ADRENALINE2 and SC_ASSNCROS exclude bows and all gun types
+_BOW_GUN_WEAPONS     = frozenset({"Bow", "Revolver", "Rifle", "Gatling", "Shotgun", "Grenade"})
 _TF_MISS_JOBL2 = frozenset({12, 17, 4013, 4018})  # 2nd-class thief jobs (Assassin, Rogue + trans)
 
 
@@ -467,15 +470,16 @@ class StatusCalculator:
 
         # SC_ADRENALINE: val3 = 300 (self/BS) or 200 (party member) (status.c:7226-7232)
         # support_buffs stores the actual val3 directly (300 or 200).
-        # Weapon restriction (axe/mace only) not enforced here — user's responsibility.
+        # Gate: status_change_start:7227 rejects if weapon not 1HAxe/2HAxe/Mace (skill_db.conf:3940-3944)
         adrenaline_val = int(support.get("SC_ADRENALINE", 0))
-        if adrenaline_val:
+        if adrenaline_val and weapon.weapon_type in _ADRENALINE_WEAPONS:
             sc_aspd_max = max(sc_aspd_max, adrenaline_val)
 
         # SC_ADRENALINE2 (Advanced Adrenaline Rush): same val3 formula (300 self / 200 party).
         # Whitesmith-only Spirit skill. status.c:5614-5616 (max pool), 7232-7233 (val3).
+        # Gate: status_change_start:7233 rejects bows and guns (skill_db.conf:14095-14113)
         adrenaline2_val = int(support.get("SC_ADRENALINE2", 0))
-        if adrenaline2_val:
+        if adrenaline2_val and weapon.weapon_type not in _BOW_GUN_WEAPONS:
             sc_aspd_max = max(sc_aspd_max, adrenaline2_val)
 
         # SC_SPEARQUICKEN: val2 = 200+10×lv (status.c:7822 #ifndef RENEWAL_ASPD)
@@ -491,10 +495,11 @@ class StatusCalculator:
                 sc_aspd_max = max(sc_aspd_max, 200 + 10 * spear_lv)
 
         # SC_ASSNCROS (Assassin's Cross): val2 = (MusLesson/2 + 10 + song_lv + bard_agi/10) * 10
-        # skill.c:13296-13307 #else (pre-renewal); weapon restriction (no bow/gun) not enforced here.
+        # skill.c:13296-13307 #else (pre-renewal)
+        # Gate: status_calc_aspd_rate:5638-5645 suppresses for bow/gun weapon types
         # song_state — bard/dancer song inputs, populated by buffs_section.py
         song = build.song_state
-        if song.get("SC_ASSNCROS"):
+        if song.get("SC_ASSNCROS") and weapon.weapon_type not in _BOW_GUN_WEAPONS:
             song_lv   = int(song["SC_ASSNCROS"])
             mus_lv    = int(song.get("SC_ASSNCROS_lesson", 0))
             s_agi     = int(song.get("SC_ASSNCROS_agi", 1))

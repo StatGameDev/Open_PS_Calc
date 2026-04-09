@@ -88,7 +88,7 @@ class MagicPipeline:
             )
             result.min_damage = failure_dmg
             result.max_damage = failure_dmg
-            result.avg_damage = float(failure_dmg)
+            result.avg_damage = failure_dmg
             result.pmf = {failure_dmg: 1.0}
             return result
 
