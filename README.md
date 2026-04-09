@@ -1,9 +1,9 @@
 # PS Calc
 
-A pre-renewal Ragnarok Online damage calculator. Shows the full damage pipeline step by
+A pre-renewal Ragnarok Online damage calculator. Can show the full damage pipeline step by
 step, with each calculation citing the exact Hercules emulator source function.
 
-Supports standard pre-renewal servers and [Payon Stories](https://discord.gg/payonstories).
+Supports standard pre-renewal servers and [Payon Stories](https://cp.payonstories.com).
 
 ---
 
@@ -25,6 +25,8 @@ pip install -r requirements.txt
 python main.py
 ```
 
+That's it, nothing scary, complicated or suspicious.
+
 ---
 
 ## Formula accuracy
@@ -35,13 +37,14 @@ All damage formulas are derived from the
 `#endif` sequences. Every pipeline step cites the specific source file and function.
 
 If you find a discrepancy between the calculator output and in-game results, open an
-issue with the skill name, input values, and observed damage.
+issue with your build save file, skill name and parameters, and observed damage.
 
 ---
 
 ## Status
 
-Active development. First public release. Expect gaps in skill coverage; see open issues.
+Active development. First public release. Expect gaps in skill coverage; see open issues once I consolidate and push them.
+No real GUI changes since the Alpha, I just wanted to push a functional version ASAP.
 
 ---
 
