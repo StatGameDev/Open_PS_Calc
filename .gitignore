@@ -5,6 +5,7 @@ __pycache__/
 # IDE local state
 .vs/
 .vscode/
+.idea/
 
 # User-generated runtime config (scale override, future prefs)
 settings.json
