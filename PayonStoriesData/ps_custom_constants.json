@@ -1,0 +1,21 @@
+{
+  "2613": {"constant": "PS_AM_REMOTEDETONATOR", "job": [18, 4019]},
+  "2614": {"constant": "PS_AM_HERBICIDE", "job": [18, 4019]},
+  "2615": {"constant": "PS_AC_SCATTERING", "job": [3]},
+  "2616": {"constant": "PS_RG_AMBUSHING", "job": []},
+  "2618": {"constant": "PS_SA_GEMSTONEEXTRACTION", "job": [16, 4017]},
+  "2619": {"constant": "PS_BS_RESOURCEROUNDUP", "job": [18, 4019]},
+  "2620": {"constant": "PS_SN_SOULRESTORE", "job": [23]},
+  "2621": {"constant": "PS_SN_SOULHARVEST", "job": [23]},
+  "2622": {"constant": "PS_PR_HOLYSTRIKE", "job": [7, 4008]},
+  "2623": {"constant": "PS_CORRUPTINGDRAIN", "job": []},
+  "2624": {"constant": "PS_TRIAGE", "job": []},
+  "2625": {"constant": "PS_NPC_FIREWALK", "job": []},
+  "2626": {"constant": "PS_NJ_SHADOWSWITHIN", "job": [25]},
+  "2627": {"constant": "PS_BS_ZENYPINCHER", "job": [10, 4011]},
+  "2631": {"constant": "PS_RG_TRICKARROW", "job": [17, 4018]},
+  "2632": {"constant": "PS_HT_FLIGHTPATTERN", "job": [11, 4012]},
+  "2633": {"constant": "PS_RG_QUICKSTEP", "job": [17, 4018]},
+  "2635": {"constant": "PS_RG_WEAKNESSEXPLOIT", "job": [17, 4018]},
+  "2636": {"constant": "PS_RG_STOLENGOODS", "job": [17, 4018]}
+}

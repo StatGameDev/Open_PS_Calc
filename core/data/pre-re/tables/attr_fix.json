@@ -1,0 +1,65 @@
+{
+  "comment": "Exact pre-renewal element damage adjustment table from db/pre-re/attr_fix.conf. 10 defending elements × 4 levels × 10 attacking elements. 100% complete.",
+  "table": {
+    "Neutral": {
+      "1": { "Neutral": 100, "Water": 100, "Earth": 100, "Fire": 100, "Wind": 100, "Poison": 100, "Holy": 100, "Dark": 100, "Ghost": 25, "Undead": 100 },
+      "2": { "Neutral": 100, "Water": 100, "Earth": 100, "Fire": 100, "Wind": 100, "Poison": 100, "Holy": 100, "Dark": 100, "Ghost": 0, "Undead": 100 },
+      "3": { "Neutral": 100, "Water": 100, "Earth": 100, "Fire": 100, "Wind": 100, "Poison": 100, "Holy": 100, "Dark": 100, "Ghost": 0, "Undead": 100 },
+      "4": { "Neutral": 100, "Water": 100, "Earth": 100, "Fire": 100, "Wind": 100, "Poison": 100, "Holy": 100, "Dark": 100, "Ghost": 0, "Undead": 100 }
+    },
+    "Water": {
+      "1": { "Neutral": 100, "Water": 25, "Earth": 100, "Fire": 50, "Wind": 175, "Poison": 100, "Holy": 100, "Dark": 100, "Ghost": 100, "Undead": 100 },
+      "2": { "Neutral": 100, "Water": 0, "Earth": 100, "Fire": 25, "Wind": 175, "Poison": 75, "Holy": 100, "Dark": 100, "Ghost": 75, "Undead": 75 },
+      "3": { "Neutral": 100, "Water": -25, "Earth": 100, "Fire": 0, "Wind": 200, "Poison": 50, "Holy": 100, "Dark": 100, "Ghost": 50, "Undead": 50 },
+      "4": { "Neutral": 100, "Water": -50, "Earth": 100, "Fire": 0, "Wind": 200, "Poison": 25, "Holy": 75, "Dark": 75, "Ghost": 25, "Undead": 25 }
+    },
+    "Earth": {
+      "1": { "Neutral": 100, "Water": 100, "Earth": 100, "Fire": 150, "Wind": 50, "Poison": 125, "Holy": 100, "Dark": 100, "Ghost": 100, "Undead": 100 },
+      "2": { "Neutral": 100, "Water": 100, "Earth": 50, "Fire": 175, "Wind": 25, "Poison": 125, "Holy": 100, "Dark": 100, "Ghost": 75, "Undead": 75 },
+      "3": { "Neutral": 100, "Water": 100, "Earth": 0, "Fire": 200, "Wind": 0, "Poison": 100, "Holy": 100, "Dark": 100, "Ghost": 50, "Undead": 50 },
+      "4": { "Neutral": 100, "Water": 100, "Earth": -25, "Fire": 200, "Wind": 0, "Poison": 75, "Holy": 75, "Dark": 75, "Ghost": 25, "Undead": 25 }
+    },
+    "Fire": {
+      "1": { "Neutral": 100, "Water": 150, "Earth": 50, "Fire": 25, "Wind": 100, "Poison": 125, "Holy": 100, "Dark": 100, "Ghost": 100, "Undead": 100 },
+      "2": { "Neutral": 100, "Water": 175, "Earth": 25, "Fire": 0, "Wind": 100, "Poison": 125, "Holy": 100, "Dark": 100, "Ghost": 75, "Undead": 75 },
+      "3": { "Neutral": 100, "Water": 200, "Earth": 0, "Fire": -25, "Wind": 100, "Poison": 100, "Holy": 100, "Dark": 100, "Ghost": 50, "Undead": 50 },
+      "4": { "Neutral": 100, "Water": 200, "Earth": 0, "Fire": -50, "Wind": 100, "Poison": 75, "Holy": 75, "Dark": 75, "Ghost": 25, "Undead": 25 }
+    },
+    "Wind": {
+      "1": { "Neutral": 100, "Water": 50, "Earth": 150, "Fire": 100, "Wind": 25, "Poison": 125, "Holy": 100, "Dark": 100, "Ghost": 100, "Undead": 100 },
+      "2": { "Neutral": 100, "Water": 25, "Earth": 175, "Fire": 100, "Wind": 0, "Poison": 125, "Holy": 100, "Dark": 100, "Ghost": 75, "Undead": 75 },
+      "3": { "Neutral": 100, "Water": 0, "Earth": 200, "Fire": 100, "Wind": -25, "Poison": 100, "Holy": 100, "Dark": 100, "Ghost": 50, "Undead": 50 },
+      "4": { "Neutral": 100, "Water": 0, "Earth": 200, "Fire": 100, "Wind": -50, "Poison": 75, "Holy": 75, "Dark": 75, "Ghost": 25, "Undead": 25 }
+    },
+    "Poison": {
+      "1": { "Neutral": 100, "Water": 100, "Earth": 100, "Fire": 100, "Wind": 100, "Poison": 0, "Holy": 100, "Dark": 50, "Ghost": 100, "Undead": 50 },
+      "2": { "Neutral": 100, "Water": 100, "Earth": 100, "Fire": 100, "Wind": 100, "Poison": 0, "Holy": 100, "Dark": 25, "Ghost": 75, "Undead": 25 },
+      "3": { "Neutral": 100, "Water": 100, "Earth": 100, "Fire": 100, "Wind": 100, "Poison": 0, "Holy": 125, "Dark": 0, "Ghost": 50, "Undead": 0 },
+      "4": { "Neutral": 100, "Water": 75, "Earth": 75, "Fire": 75, "Wind": 75, "Poison": 0, "Holy": 125, "Dark": -25, "Ghost": 25, "Undead": -25 }
+    },
+    "Holy": {
+      "1": { "Neutral": 100, "Water": 75, "Earth": 75, "Fire": 75, "Wind": 75, "Poison": 75, "Holy": 0, "Dark": 125, "Ghost": 75, "Undead": 100 },
+      "2": { "Neutral": 100, "Water": 50, "Earth": 50, "Fire": 50, "Wind": 50, "Poison": 50, "Holy": -25, "Dark": 150, "Ghost": 50, "Undead": 125 },
+      "3": { "Neutral": 100, "Water": 25, "Earth": 25, "Fire": 25, "Wind": 25, "Poison": 25, "Holy": -50, "Dark": 175, "Ghost": 25, "Undead": 150 },
+      "4": { "Neutral": 100, "Water": 0, "Earth": 0, "Fire": 0, "Wind": 0, "Poison": 0, "Holy": -100, "Dark": 200, "Ghost": 0, "Undead": 175 }
+    },
+    "Dark": {
+      "1": { "Neutral": 100, "Water": 100, "Earth": 100, "Fire": 100, "Wind": 100, "Poison": 50, "Holy": 125, "Dark": 0, "Ghost": 75, "Undead": 0 },
+      "2": { "Neutral": 100, "Water": 75, "Earth": 75, "Fire": 75, "Wind": 75, "Poison": 25, "Holy": 150, "Dark": -25, "Ghost": 50, "Undead": 0 },
+      "3": { "Neutral": 100, "Water": 50, "Earth": 50, "Fire": 50, "Wind": 50, "Poison": 0, "Holy": 175, "Dark": -50, "Ghost": 25, "Undead": 0 },
+      "4": { "Neutral": 100, "Water": 25, "Earth": 25, "Fire": 25, "Wind": 25, "Poison": -25, "Holy": 200, "Dark": -100, "Ghost": 0, "Undead": 0 }
+    },
+    "Ghost": {
+      "1": { "Neutral": 25, "Water": 100, "Earth": 100, "Fire": 100, "Wind": 100, "Poison": 100, "Holy": 100, "Dark": 100, "Ghost": 125, "Undead": 100 },
+      "2": { "Neutral": 25, "Water": 100, "Earth": 100, "Fire": 100, "Wind": 100, "Poison": 75, "Holy": 100, "Dark": 100, "Ghost": 150, "Undead": 100 },
+      "3": { "Neutral": 0, "Water": 100, "Earth": 100, "Fire": 100, "Wind": 100, "Poison": 50, "Holy": 100, "Dark": 100, "Ghost": 175, "Undead": 100 },
+      "4": { "Neutral": 0, "Water": 100, "Earth": 100, "Fire": 100, "Wind": 100, "Poison": 25, "Holy": 100, "Dark": 100, "Ghost": 200, "Undead": 100 }
+    },
+    "Undead": {
+      "1": { "Neutral": 100, "Water": 100, "Earth": 100, "Fire": 125, "Wind": 100, "Poison": -25, "Holy": 150, "Dark": -25, "Ghost": 100, "Undead": 0 },
+      "2": { "Neutral": 100, "Water": 100, "Earth": 100, "Fire": 150, "Wind": 100, "Poison": -50, "Holy": 175, "Dark": -50, "Ghost": 100, "Undead": -25 },
+      "3": { "Neutral": 100, "Water": 100, "Earth": 100, "Fire": 175, "Wind": 100, "Poison": -75, "Holy": 200, "Dark": -75, "Ghost": 100, "Undead": -50 },
+      "4": { "Neutral": 100, "Water": 100, "Earth": 100, "Fire": 200, "Wind": 100, "Poison": -100, "Holy": 200, "Dark": -100, "Ghost": 100, "Undead": -75 }
+    }
+  }
+}

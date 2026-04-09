@@ -1,0 +1,1165 @@
+[
+  {
+    "items": [
+      "Dragon_Slayer",
+      "Dragon_Breath"
+    ],
+    "script": "bonus2 bAddRace, RC_Dragon, 5;"
+  },
+  {
+    "items": [
+      "Long_Horn",
+      "Valkyrjas_Shield"
+    ],
+    "script": "bonus3 bAutoSpellWhenHit, \"HP_ASSUMPTIO\", 2, 5;"
+  },
+  {
+    "items": [
+      "Long_Horn",
+      "Tournament_Shield"
+    ],
+    "script": "bonus2 bAddRace, RC_All, 4;\n\t\tbonus bDef, 2;"
+  },
+  {
+    "items": [
+      "Battle_Hook",
+      "Tournament_Shield"
+    ],
+    "script": "bonus2 bAddRace, RC_All, 4;\n\t\tbonus bDef, 2;"
+  },
+  {
+    "items": [
+      "Hunting_Spear",
+      "Tournament_Shield"
+    ],
+    "script": "bonus2 bAddRace, RC_All, 4;\n\t\tbonus bDef, 2;"
+  },
+  {
+    "items": [
+      "Long_Horn_M",
+      "Valkyrjas_Shield"
+    ],
+    "script": "bonus3 bAutoSpellWhenHit, \"HP_ASSUMPTIO\", 2, 5;"
+  },
+  {
+    "items": [
+      "Staff_Of_Soul",
+      "Spiritual_Ring"
+    ],
+    "script": "bonus bMatkRate, 6;\n\t\tbonus bDex, 2;\n\t\tbonus bCastrate, -getequiprefinerycnt(EQI_HAND_R);"
+  },
+  {
+    "items": [
+      "Staff_Of_Soul",
+      "Spiritual_Ring_C"
+    ],
+    "script": "bonus bMatkRate, 6;\n\t\tbonus bDex, 2;\n\t\tbonus bCastrate, -getequiprefinerycnt(EQI_HAND_R);"
+  },
+  {
+    "items": [
+      "Wizardy_Staff",
+      "Spiritual_Ring"
+    ],
+    "script": "bonus bMatkRate, 6;\n\t\tbonus bDex, 2;\n\t\tbonus bCastrate, -getequiprefinerycnt(EQI_HAND_R);"
+  },
+  {
+    "items": [
+      "Wizardy_Staff",
+      "Spiritual_Ring_C"
+    ],
+    "script": "bonus bMatkRate, 6;\n\t\tbonus bDex, 2;\n\t\tbonus bCastrate, -getequiprefinerycnt(EQI_HAND_R);"
+  },
+  {
+    "items": [
+      "Gae_Bolg",
+      "Dragon_Breath"
+    ],
+    "script": "bonus2 bAddRace, RC_Dragon, 5;"
+  },
+  {
+    "items": [
+      "Spectral_Spear",
+      "Red_Silk_Seal"
+    ],
+    "script": "bonus2 bResEff, Eff_Confusion, 9500;"
+  },
+  {
+    "items": [
+      "Spectral_Spear_",
+      "Red_Silk_Seal"
+    ],
+    "script": "bonus2 bResEff, Eff_Confusion, 9500;"
+  },
+  {
+    "items": [
+      "Hollgrehenn_Hammer",
+      "B_Harword_Card"
+    ],
+    "script": "bonus bBreakArmorRate, 900;\n\t\tbonus bBreakWeaponRate, 900;"
+  },
+  {
+    "items": [
+      "Principles_Of_Magic",
+      "Librarian_Glove",
+      "Pocket_Watch_"
+    ],
+    "script": "bonus bInt, 5;\n\t\tbonus bMaxHP, 700;\n\t\tbonus bAspdRate, 5;"
+  },
+  {
+    "items": [
+      "Ancient_Magic",
+      "Mage_Coat"
+    ],
+    "script": "bonus bMdef, 8;\n\t\tbonus bMaxSPrate, 10;\n\t\tbonus bInt, 4;"
+  },
+  {
+    "items": [
+      "Ancient_Magic",
+      "Mage_Coat_"
+    ],
+    "script": "bonus bMdef, 8;\n\t\tbonus bMaxSPrate, 10;\n\t\tbonus bInt, 4;"
+  },
+  {
+    "items": [
+      "Ancient_Magic",
+      "Librarian_Glove",
+      "Pocket_Watch_"
+    ],
+    "script": "bonus bInt, 5;\n\t\tbonus bMaxHP, 700;\n\t\tbonus bAspdRate, 5;"
+  },
+  {
+    "items": [
+      "Bone_Wand",
+      "Skull_Cap"
+    ],
+    "script": "bonus bMatk, 10 * getequiprefinerycnt(EQI_HAND_R);\n\t\tbonus bCastrate, -10;"
+  },
+  {
+    "items": [
+      "Staff_Of_Wing",
+      "Wing_Of_Eagle"
+    ],
+    "script": "bonus bSpeedRate, 25;"
+  },
+  {
+    "items": [
+      "Survival_Rod_",
+      "Clack_Of_Servival"
+    ],
+    "script": "bonus bMaxHP, 300;\n\t\tbonus bMatkRate, getequiprefinerycnt(EQI_HAND_R) - 5;\n\t\tbonus2 bSubEle, Ele_Neutral, getequiprefinerycnt(EQI_HAND_R) * 3;"
+  },
+  {
+    "items": [
+      "Survival_Rod_",
+      "Cloak_Of_Survival_C"
+    ],
+    "script": "bonus bMatkRate, 5;\n\t\tbonus2 bSubEle, Ele_Neutral, 25;"
+  },
+  {
+    "items": [
+      "Survival_Rod2_",
+      "Clack_Of_Servival"
+    ],
+    "script": "bonus bMaxHP, 300;\n\t\tbonus bMatkRate, getequiprefinerycnt(EQI_HAND_R) - 5;\n\t\tbonus2 bSubEle, Ele_Neutral, getequiprefinerycnt(EQI_HAND_R) * 3;"
+  },
+  {
+    "items": [
+      "Survival_Rod2_",
+      "Cloak_Of_Survival_C"
+    ],
+    "script": "bonus bMatkRate, 5;\n\t\tbonus2 bSubEle, Ele_Neutral, 25;"
+  },
+  {
+    "items": [
+      "Walking_Stick",
+      "Magician_Hat"
+    ],
+    "script": "bonus bDex, 2;\n\t\tbonus bInt, 2;\n\t\tbonus bSPrecovRate, 5;\n\t\tbonus bMatkRate, getequiprefinerycnt(EQI_HAND_R);"
+  },
+  {
+    "items": [
+      "Holy_Stick",
+      "Exorcism_Bible"
+    ],
+    "script": "bonus2 bSkillAtk, \"PR_MAGNUS\", 20;\n\t\tbonus3 bAutoSpellWhenHit, \"PR_TURNUNDEAD\", 1, 20;"
+  },
+  {
+    "items": [
+      "Thorn_Staff",
+      "Skull_Cap"
+    ],
+    "script": "bonus bMatk, 10 * getequiprefinerycnt(EQI_HAND_R);\n\t\tbonus bCastrate, -10;"
+  },
+  {
+    "items": [
+      "Luna_Bow",
+      "Lunatic_Brooch"
+    ],
+    "script": "bonus bDex, 1;\n\t\tbonus bMaxSP, 50;\n\t\tbonus bSPrecovRate, 10;"
+  },
+  {
+    "items": [
+      "Burning_Bow",
+      "Fire_Arrow"
+    ],
+    "script": "bonus bLongAtkRate, 25;"
+  },
+  {
+    "items": [
+      "Frozen_Bow",
+      "Crystal_Arrow"
+    ],
+    "script": "bonus bLongAtkRate, 25;"
+  },
+  {
+    "items": [
+      "Earth_Bow",
+      "Stone_Arrow"
+    ],
+    "script": "bonus bLongAtkRate, 25;\n\t\tbonus2 bAddEff, Eff_Stone, 1000;"
+  },
+  {
+    "items": [
+      "Gust_Bow",
+      "Arrow_Of_Wind"
+    ],
+    "script": "bonus bLongAtkRate, 25;\n\t\tbonus3 bAutoSpell, \"NJ_HUUJIN\", 5, 100;\n\t\tif (readparam(bInt) > 39)\n\t\t\tbonus3 bAutoSpell, \"NJ_HUUJIN\", 5, 200;"
+  },
+  {
+    "items": [
+      "Orc_Archer_Bow",
+      "Steel_Arrow"
+    ],
+    "script": "bonus bLongAtkRate, 50;"
+  },
+  {
+    "items": [
+      "Cursed_Lyre",
+      "Cursed_Star"
+    ],
+    "script": "bonus bAtk, 25;\n\t\tbonus3 bAddEff, Eff_Curse, 200, ATF_WEAPON | ATF_LONG | ATF_TARGET;"
+  },
+  {
+    "items": [
+      "Divine_Cross",
+      "Spiritual_Ring"
+    ],
+    "script": "bonus bMatkRate, 10;\n\t\tbonus bDex, 2;\n\t\tbonus2 bSubRace, RC_Demon, 10;\n\t\tbonus2 bSubRace, RC_Undead, 10;"
+  },
+  {
+    "items": [
+      "Divine_Cross",
+      "Spiritual_Ring_C"
+    ],
+    "script": "bonus bMatkRate, 10;\n\t\tbonus bDex, 2;\n\t\tbonus2 bSubRace, RC_Demon, 10;\n\t\tbonus2 bSubRace, RC_Undead, 10;"
+  },
+  {
+    "items": [
+      "Memorize_Book",
+      "Pocket_Watch_",
+      "One_Eyed_Glass"
+    ],
+    "script": "bonus bHPrecovRate, 15;\n\t\tbonus bSPrecovRate, 15;\n\t\tbonus bMatkRate, 7;"
+  },
+  {
+    "items": [
+      "Stone_Buckler",
+      "Odins_Blessing",
+      "Magni_Cap"
+    ],
+    "script": "bonus bStr, 2;\n\t\tbonus bDef, 5;\n\t\tbonus bMdef, 5;\n\t\tif (BaseClass == Job_Swordman)\n\t\t\tbonus bDef, 6;"
+  },
+  {
+    "items": [
+      "Valkyrjas_Shield",
+      "Odins_Blessing",
+      "Fricca_Circlet"
+    ],
+    "script": "bonus bDef, 2 - getequiprefinerycnt(EQI_HAND_L) - getequiprefinerycnt(EQI_HEAD_TOP);\n\t\tbonus bMdef, 5 + getequiprefinerycnt(EQI_HAND_L) + getequiprefinerycnt(EQI_HEAD_TOP);"
+  },
+  {
+    "items": [
+      "Angels_Safeguard",
+      "Angels_Protection",
+      "Angels_Arrival",
+      "Angels_Warmth",
+      "Kiss_Of_Angel"
+    ],
+    "script": "bonus bMaxHP, 900;\n\t\tbonus bMaxSP, 100;\n\t\tbonus3 bAutoSpellWhenHit, \"HP_ASSUMPTIO\", 1, 30;"
+  },
+  {
+    "items": [
+      "Memorize_Book_",
+      "Pocket_Watch_",
+      "One_Eyed_Glass"
+    ],
+    "script": "bonus bHPrecovRate, 15;\n\t\tbonus bSPrecovRate, 15;\n\t\tbonus bMatkRate, 7;"
+  },
+  {
+    "items": [
+      "Orleans_Server",
+      "Orleans_Glove"
+    ],
+    "script": "bonus bCastrate, -10;"
+  },
+  {
+    "items": [
+      "Thorny_Buckler",
+      "Bison_Horn"
+    ],
+    "script": "bonus bAspdRate, 10;\n\t\tbonus bShortWeaponDamageReturn, 5;"
+  },
+  {
+    "items": [
+      "Shadow_Guard",
+      "Shadow_Walk"
+    ],
+    "script": "bonus2 bAddEff, Eff_Blind, 500;\n\t\tautobonus \"{ bonus bFlee,20; }\", 200, 10000, BF_WEAPON, \"{ specialeffect(EF_INCAGILITY, AREA, playerattached()); }\";"
+  },
+  {
+    "items": [
+      "Valkyrjas_Shield_C",
+      "Odins_Blessing",
+      "Fricca_Circlet"
+    ],
+    "script": "bonus bDef, 2 - getrefine() - getequiprefinerycnt(EQI_HEAD_TOP);\n\t\tbonus bMdef, 5 + getrefine() + getequiprefinerycnt(EQI_HEAD_TOP);"
+  },
+  {
+    "items": [
+      "Mr_Smile",
+      "Wit_Pumpkin_Hat"
+    ],
+    "script": "bonus2 bAddMonsterDropItem, 12192, 1;"
+  },
+  {
+    "items": [
+      "Phantom_Of_Opera",
+      "Wit_Pumpkin_Hat"
+    ],
+    "script": "bonus bFlee, 10;\n\t\tbonus2 bAddEff, Eff_Stun, 1000;"
+  },
+  {
+    "items": [
+      "Elven_Ears",
+      "Skull_Cap"
+    ],
+    "script": "bonus bUseSPrate, -3;"
+  },
+  {
+    "items": [
+      "Padded_Armor",
+      "Hyper_Changer"
+    ],
+    "script": "bonus bDef, 5;\n\t\tbonus bMaxHP, 150;"
+  },
+  {
+    "items": [
+      "Padded_Armor_",
+      "Hyper_Changer"
+    ],
+    "script": "bonus bDef, 5;\n\t\tbonus bMaxHP, 150;"
+  },
+  {
+    "items": [
+      "Ninja_Suit",
+      "Shinobis_Sash"
+    ],
+    "script": "bonus bUseSPrate, -20;\n\t\tbonus bMaxHP, 300;"
+  },
+  {
+    "items": [
+      "G_Strings",
+      "Undershirt"
+    ],
+    "script": "bonus bAgi, 5;\n\t\tbonus bFlee, 10;"
+  },
+  {
+    "items": [
+      "G_Strings",
+      "Undershirt_"
+    ],
+    "script": "bonus bAgi, 5;\n\t\tbonus bFlee, 10;"
+  },
+  {
+    "items": [
+      "Odins_Blessing",
+      "Fricco_Shoes",
+      "Falcon_Robe"
+    ],
+    "script": "bonus bAgi, 3;\n\t\tbonus bMaxHPrate, 5;\n\t\tbonus bMaxSPrate, 5;"
+  },
+  {
+    "items": [
+      "Odins_Blessing",
+      "Vidars_Boots",
+      "Valis_Manteau"
+    ],
+    "script": "bonus bVit, 5;\n\t\tbonus bHPrecovRate, 10;\n\t\tbonus bSPrecovRate, 10;"
+  },
+  {
+    "items": [
+      "Odins_Blessing",
+      "Ulle_Cap"
+    ],
+    "script": "if (readparam(bDex) > 69)\n\t\t\tbonus bUseSPrate, -10;"
+  },
+  {
+    "items": [
+      "Odins_Blessing",
+      "Ulle_Cap_I"
+    ],
+    "script": "if (readparam(bDex) > 69)\n\t\t\tbonus bUseSPrate, -10;"
+  },
+  {
+    "items": [
+      "Goibnes_Armor",
+      "Goibnes_Combat_Boots",
+      "Goibnes_Shoulder_Arms",
+      "Goibnes_Helmet"
+    ],
+    "script": "bonus bVit, 5;\n\t\tbonus bMaxHPrate, 15;\n\t\tbonus bMaxSPrate, 5;\n\t\tbonus bDef, 5;\n\t\tbonus bMdef, 15;\n\t\tbonus2 bSubEle, Ele_Water, 10;\n\t\tbonus2 bSubEle, Ele_Earth, 10;\n\t\tbonus2 bSubEle, Ele_Fire, 10;\n\t\tbonus2 bSubEle, Ele_Wind, 10;"
+  },
+  {
+    "items": [
+      "Valkyrie_Armor",
+      "Valkyrie_Shoes",
+      "Valkyrie_Manteau",
+      "Valkyrie_Helm"
+    ],
+    "script": "bonus bAllStats, 1;"
+  },
+  {
+    "items": [
+      "Dress_Of_Angel",
+      "Angeling_Hairpin"
+    ],
+    "script": "bonus bLuk, 6;\n\t\tbonus bFlee, 5;\n\t\tbonus bInt, 2;"
+  },
+  {
+    "items": [
+      "Ninja_Suit_",
+      "Shinobis_Sash"
+    ],
+    "script": "bonus bUseSPrate, -20;\n\t\tbonus bMaxHP, 300;"
+  },
+  {
+    "items": [
+      "G_Strings_",
+      "Undershirt"
+    ],
+    "script": "bonus bAgi, 5;\n\t\tbonus bFlee, 10;"
+  },
+  {
+    "items": [
+      "G_Strings_",
+      "Undershirt_"
+    ],
+    "script": "bonus bAgi, 5;\n\t\tbonus bFlee, 10;"
+  },
+  {
+    "items": [
+      "Diabolus_Robe",
+      "Diabolus_Ring"
+    ],
+    "script": "bonus2 bAddRace, RC_All, 3;\n\t\tbonus bMatkRate, 3;"
+  },
+  {
+    "items": [
+      "Diabolus_Armor",
+      "Diabolus_Ring"
+    ],
+    "script": "bonus2 bAddRace, RC_All, 3;\n\t\tbonus bMatkRate, 3;"
+  },
+  {
+    "items": [
+      "Assaulter_Plate",
+      "Battle_Greave",
+      "Commander_Manteau"
+    ],
+    "script": "bonus2 bSubRace, RC_NonDemiPlayer, -300;\n\t\tbonus bVit, 3;\n\t\tbonus bMaxHPrate, 12;\n\t\tbonus bHealPower2, 10;\n\t\tbonus bAddItemHealRate, 10;\n\t\tautobonus2 \"{ bonus2 bHPRegenRate,600,1000; }\", 5, 10000, BF_WEAPON, \"{ specialeffect(EF_HEAL, AREA, playerattached()); }\";"
+  },
+  {
+    "items": [
+      "Elite_Engineer_Armor",
+      "Battle_Greave",
+      "Commander_Manteau"
+    ],
+    "script": "bonus2 bSubRace, RC_NonDemiPlayer, -300;\n\t\tbonus bStr, 3;\n\t\tbonus bMaxHPrate, 12;\n\t\tbonus2 bSkillAtk, \"MC_MAMMONITE\", 20;\n\t\tbonus2 bSkillHeal, \"AM_POTIONPITCHER\", 10;\n\t\tbonus2 bSkillHeal2, \"AM_POTIONPITCHER\", 10;\n\t\tbonus2 bSkillHeal2, \"AL_HEAL\", 10;\n\t\tbonus bUnbreakableArmor, 0;"
+  },
+  {
+    "items": [
+      "Assassin_Robe",
+      "Battle_Greave",
+      "Commander_Manteau"
+    ],
+    "script": "bonus2 bSubRace, RC_NonDemiPlayer, -300;\n\t\tbonus bAgi, 3;\n\t\tbonus bMaxHPrate, 12;\n\t\tbonus bCritical, 5;\n\t\tbonus bAspdRate, 5;\n\t\tautobonus \"{ bonus2 bHPRegenRate,300,1000; }\", 10, 10000, BF_WEAPON, \"{ specialeffect(EF_HEAL, AREA, playerattached()); }\";"
+  },
+  {
+    "items": [
+      "Warlock_Battle_Robe",
+      "Combat_Boots",
+      "Commander_Manteau_"
+    ],
+    "script": "bonus2 bSubRace, RC_NonDemiPlayer, -300;\n\t\tbonus bInt, 3;\n\t\tbonus bMaxHPrate, 12;\n\t\tbonus2 bResEff, Eff_Stun, 2000;\n\t\tautobonus2 \"{ bonus bDefEle,Ele_Ghost; }\", 30, 10000, BF_WEAPON, \"{ specialeffect(EF_ENERGYCOAT, AREA, playerattached()); }\";"
+  },
+  {
+    "items": [
+      "Medic_Robe",
+      "Combat_Boots",
+      "Commander_Manteau_"
+    ],
+    "script": "bonus2 bSubRace, RC_NonDemiPlayer, -300;\n\t\tbonus bInt, 3;\n\t\tbonus bMaxHPrate, 12;\n\t\tbonus2 bCastrate, \"AL_HOLYLIGHT\", -50;\n\t\tbonus bHealPower, 6;\n\t\tautobonus2 \"{ bonus bDefEle,Ele_Ghost; }\", 30, 10000, BF_WEAPON, \"{ specialeffect(EF_ENERGYCOAT, AREA, playerattached()); }\";"
+  },
+  {
+    "items": [
+      "Elite_Archer_Suit",
+      "Combat_Boots",
+      "Commander_Manteau_"
+    ],
+    "script": "bonus2 bSubRace, RC_NonDemiPlayer, -300;\n\t\tbonus bDex, 3;\n\t\tbonus bMaxHPrate, 12;\n\t\tbonus bLongAtkDef, 10;\n\t\tbonus bDelayrate, -25;"
+  },
+  {
+    "items": [
+      "Elite_Shooter_Suit",
+      "Battle_Boots",
+      "Sheriff_Manteau"
+    ],
+    "script": "bonus2 bSubRace, RC_NonDemiPlayer, -300;\n\t\tbonus bDex, 3;\n\t\tbonus bMaxHPrate, 12;\n\t\tbonus bLongAtkDef, 10;\n\t\tbonus bDelayrate, -25;"
+  },
+  {
+    "items": [
+      "Sprint_Mail",
+      "Sprint_Shoes",
+      "Sprint_Ring"
+    ],
+    "script": "bonus bMaxHPrate, 7;\n\t\tbonus bMaxSPrate, 7;\n\t\tbonus bCastrate, -3;\n\t\tbonus bDelayrate, -15;"
+  },
+  {
+    "items": [
+      "Improved_Tights",
+      "Linen_Glove"
+    ],
+    "script": "bonus bFlee2, 5;"
+  },
+  {
+    "items": [
+      "Krieger_Suit1",
+      "Krieger_Shoes1",
+      "Krieger_Muffler1"
+    ],
+    "script": "bonus2 bAddRace, RC_All, 5;\n\t\tbonus bMatkRate, 5;\n\t\tbonus2 bResEff, Eff_Freeze, 10000;\n\t\tbonus2 bSkillHeal2, \"AM_POTIONPITCHER\", 3;\n\t\tbonus2 bSkillHeal2, \"AL_HEAL\", 3;\n\t\tbonus2 bSkillHeal2, \"PR_SANCTUARY\", 3;"
+  },
+  {
+    "items": [
+      "Dragon_Vest",
+      "Dragon_Manteau"
+    ],
+    "script": "bonus bAgi, 5;\n\t\tbonus bFlee, 15;"
+  },
+  {
+    "items": [
+      "Cuffs",
+      "Bloody_Iron_Ball"
+    ],
+    "script": "bonus bBaseAtk, 50;\n\t\tbonus2 bAddDefClass, 1196, 20;\n\t\tbonus2 bAddDefClass, 1197, 20;"
+  },
+  {
+    "items": [
+      "Tidal_Shoes",
+      "Wool_Scarf"
+    ],
+    "script": "bonus bHPrecovRate, 5;\n\t\tbonus bMaxHPrate, 10;"
+  },
+  {
+    "items": [
+      "Black_Leather_Boots",
+      "Rider_Insignia"
+    ],
+    "script": "bonus bFlee, 10;"
+  },
+  {
+    "items": [
+      "Black_Leather_Boots",
+      "Rider_Insignia_"
+    ],
+    "script": "bonus bFlee, 10;"
+  },
+  {
+    "items": [
+      "Black_Leather_Boots",
+      "Rider_Insignia_M"
+    ],
+    "script": "bonus bFlee, 10;"
+  },
+  {
+    "items": [
+      "Diabolus_Boots",
+      "Diabolus_Manteau"
+    ],
+    "script": "bonus bMaxHPrate, 6;"
+  },
+  {
+    "items": [
+      "Black_Leather_Boots_",
+      "Rider_Insignia"
+    ],
+    "script": "bonus bFlee, 10;"
+  },
+  {
+    "items": [
+      "Black_Leather_Boots_",
+      "Rider_Insignia_"
+    ],
+    "script": "bonus bFlee, 10;"
+  },
+  {
+    "items": [
+      "Black_Leather_Boots_",
+      "Rider_Insignia_M"
+    ],
+    "script": "bonus bFlee, 10;"
+  },
+  {
+    "items": [
+      "Beach_Sandal",
+      "Beach_Manteau"
+    ],
+    "script": "bonus bFlee, 5;"
+  },
+  {
+    "items": [
+      "Morpheuss_Shawl",
+      "Morpheuss_Ring",
+      "Morpheuss_Armlet",
+      "Morpheuss_Hood"
+    ],
+    "script": "bonus bInt, 5;\n\t\tbonus bMdef, 11;\n\t\tbonus bMaxSPrate, 20;\n\t\tbonus bNoCastCancel, 0;\n\t\tbonus bCastrate, 25;"
+  },
+  {
+    "items": [
+      "Morriganes_Manteau",
+      "Morriganes_Belt",
+      "Morriganes_Pendant",
+      "Morriganes_Helm"
+    ],
+    "script": "bonus bStr, 2;\n\t\tbonus bLuk, 9;\n\t\tbonus bCritical, 13;\n\t\tbonus bBaseAtk, 18;\n\t\tbonus bFlee2, 13;"
+  },
+  {
+    "items": [
+      "Dragon_Breath",
+      "Dragon_Killer"
+    ],
+    "script": "bonus2 bAddRace, RC_Dragon, 5;"
+  },
+  {
+    "items": [
+      "Clip",
+      "Spiritual_Ring"
+    ],
+    "script": "bonus2 bSkillAtk, \"AL_HEAL\", 50;\n\t\tbonus2 bSkillAtk, \"PR_MAGNUS\", 30;\n\t\tbonus bSPrecovRate, 9;"
+  },
+  {
+    "items": [
+      "Clip",
+      "Spiritual_Ring_C"
+    ],
+    "script": "bonus2 bSkillAtk, \"AL_HEAL\", 50;\n\t\tbonus2 bSkillAtk, \"PR_MAGNUS\", 30;\n\t\tbonus bSPrecovRate, 9;"
+  },
+  {
+    "items": [
+      "Clip",
+      "Spiritual_Ring_M"
+    ],
+    "script": "bonus2 bSkillAtk, \"AL_HEAL\", 50;\n\t\tbonus2 bSkillAtk, \"PR_MAGNUS\", 30;\n\t\tbonus bSPrecovRate, 9;"
+  },
+  {
+    "items": [
+      "Rosary",
+      "Spiritual_Ring"
+    ],
+    "script": "bonus2 bSkillAtk, \"AL_HEAL\", 50;\n\t\tbonus2 bSkillAtk, \"PR_MAGNUS\", 30;\n\t\tbonus bSPrecovRate, 9;"
+  },
+  {
+    "items": [
+      "Rosary",
+      "Spiritual_Ring_C"
+    ],
+    "script": "bonus2 bSkillAtk, \"AL_HEAL\", 50;\n\t\tbonus2 bSkillAtk, \"PR_MAGNUS\", 30;\n\t\tbonus bSPrecovRate, 9;"
+  },
+  {
+    "items": [
+      "Rosary",
+      "Spiritual_Ring_M"
+    ],
+    "script": "bonus2 bSkillAtk, \"AL_HEAL\", 50;\n\t\tbonus2 bSkillAtk, \"PR_MAGNUS\", 30;\n\t\tbonus bSPrecovRate, 9;"
+  },
+  {
+    "items": [
+      "Ring_Of_Rogue",
+      "Cold_Heart"
+    ],
+    "script": "bonus2 bAddSize, Size_Medium, 8;\n\t\tbonus bAspdRate, getequiprefinerycnt(EQI_HAND_R) / 2;"
+  },
+  {
+    "items": [
+      "Ring_Of_Rogue",
+      "Black_Cat"
+    ],
+    "script": "bonus2 bAddSize, Size_Large, 8;\n\t\tbonus bHit, getequiprefinerycnt(EQI_HAND_R) / 2;\n\t\tbonus bCastrate, -getequiprefinerycnt(EQI_HAND_R) / 2;"
+  },
+  {
+    "items": [
+      "Rosary_",
+      "Spiritual_Ring"
+    ],
+    "script": "bonus2 bSkillAtk, \"AL_HEAL\", 50;\n\t\tbonus2 bSkillAtk, \"PR_MAGNUS\", 30;\n\t\tbonus bSPrecovRate, 9;"
+  },
+  {
+    "items": [
+      "Rosary_",
+      "Spiritual_Ring_C"
+    ],
+    "script": "bonus2 bSkillAtk, \"AL_HEAL\", 50;\n\t\tbonus2 bSkillAtk, \"PR_MAGNUS\", 30;\n\t\tbonus bSPrecovRate, 9;"
+  },
+  {
+    "items": [
+      "Rosary_",
+      "Spiritual_Ring_M"
+    ],
+    "script": "bonus2 bSkillAtk, \"AL_HEAL\", 50;\n\t\tbonus2 bSkillAtk, \"PR_MAGNUS\", 30;\n\t\tbonus bSPrecovRate, 9;"
+  },
+  {
+    "items": [
+      "Ring_Of_Flame_Lord",
+      "Ring_Of_Resonance"
+    ],
+    "script": "bonus4 bAutoSpell, \"MO_EXTREMITYFIST\", 1, 3, 1;\n\t\tbonus3 bAutoSpell, \"PR_LEXAETERNA\", 1, 20;\n\t\tbonus3 bAutoSpell, \"AS_SONICBLOW\", 5, 50;\n\t\tbonus3 bAutoSpell, \"MO_INVESTIGATE\", 5, 20;\n\t\tbonus3 bAutoSpell, \"ASC_METEORASSAULT\", 2, 50;"
+  },
+  {
+    "items": [
+      "Medal_Swordman",
+      "Krieger_Ring1"
+    ],
+    "script": "bonus2 bAddRace, RC_All, 5;\n\t\tbonus bMatkRate, 3;\n\t\tbonus bHealPower, 5;"
+  },
+  {
+    "items": [
+      "Medal_Thief",
+      "Krieger_Ring1"
+    ],
+    "script": "bonus2 bAddRace, RC_All, 5;\n\t\tbonus bMatkRate, 3;\n\t\tbonus bHealPower, 5;"
+  },
+  {
+    "items": [
+      "Medal_Acolyte",
+      "Krieger_Ring1"
+    ],
+    "script": "bonus2 bAddRace, RC_All, 5;\n\t\tbonus bMatkRate, 3;\n\t\tbonus bHealPower, 5;"
+  },
+  {
+    "items": [
+      "Medal_Mage",
+      "Krieger_Ring1"
+    ],
+    "script": "bonus2 bAddRace, RC_All, 5;\n\t\tbonus bMatkRate, 3;\n\t\tbonus bHealPower, 5;"
+  },
+  {
+    "items": [
+      "Medal_Archer",
+      "Krieger_Ring1"
+    ],
+    "script": "bonus2 bAddRace, RC_All, 5;\n\t\tbonus bMatkRate, 3;\n\t\tbonus bHealPower, 5;"
+  },
+  {
+    "items": [
+      "Medal_Merchant",
+      "Krieger_Ring1"
+    ],
+    "script": "bonus2 bAddRace, RC_All, 5;\n\t\tbonus bMatkRate, 3;\n\t\tbonus bHealPower, 5;"
+  },
+  {
+    "items": [
+      "Icarus_Wing",
+      "Bowman_Scarf"
+    ],
+    "script": "bonus bUseSPrate, -25;"
+  },
+  {
+    "items": [
+      "Medal_Gunner",
+      "Krieger_Ring1"
+    ],
+    "script": "bonus2 bAddRace, RC_All, 5;\n\t\tbonus bMatkRate, 3;\n\t\tbonus bHealPower, 5;"
+  },
+  {
+    "items": [
+      "Shaman_Ring",
+      "Shaman_Earing",
+      "Shamans_Hair_Ornament"
+    ],
+    "script": "bonus bMaxHP, 300;\n\t\tbonus bMatkRate, 5;\n\t\tbonus2 bSubEle, Ele_Neutral, 5;"
+  },
+  {
+    "items": [
+      "Dark_Knight_Belt",
+      "Dark_Knight_Glove",
+      "Dark_Knight_Mask"
+    ],
+    "script": "bonus bMatkRate, 10;\n\t\tbonus bInt, 5;\n\t\tbonus2 bSubRace, RC_Angel, 10;"
+  },
+  {
+    "items": [
+      "Dark_Knight_Belt",
+      "Dark_Knight_Glove",
+      "Dark_Knight_MaskB"
+    ],
+    "script": "bonus bMatkRate, 10;\n\t\tbonus bInt, 5;\n\t\tbonus2 bSubRace, RC_Angel, 10;"
+  },
+  {
+    "items": [
+      "Poring_Card",
+      "Mastering_Card"
+    ],
+    "script": "bonus bFlee, 18;"
+  },
+  {
+    "items": [
+      "Lunatic_Card",
+      "Eclipse_Card"
+    ],
+    "script": "bonus bFlee, 18;"
+  },
+  {
+    "items": [
+      "Chonchon_Card",
+      "Dragon_Fly_Card"
+    ],
+    "script": "bonus bFlee, 18;"
+  },
+  {
+    "items": [
+      "Roda_Frog_Card",
+      "Toad_Card"
+    ],
+    "script": "bonus bFlee, 18;"
+  },
+  {
+    "items": [
+      "Rocker_Card",
+      "Vocal_Card"
+    ],
+    "script": "bonus bFlee, 18;"
+  },
+  {
+    "items": [
+      "Skeleton_Card",
+      "Skel_Prisoner_Card"
+    ],
+    "script": "bonus2 bAddEffWhenHit, Eff_Sleep, 600;"
+  },
+  {
+    "items": [
+      "Tarou_Card",
+      "Cramp_Card"
+    ],
+    "script": "bonus bStr, 3;"
+  },
+  {
+    "items": [
+      "Wolf_Card",
+      "Vagabond_Wolf_Card"
+    ],
+    "script": "bonus bFlee, 18;"
+  },
+  {
+    "items": [
+      "Pecopeco_Card",
+      "Grand_Peco_Card"
+    ],
+    "script": "bonus bDef, 3;\n\t\tbonus bVit, 3;"
+  },
+  {
+    "items": [
+      "Muka_Card",
+      "Raggler_Card",
+      "Baby_Leopard_Card",
+      "Zipper_Bear_Card",
+      "Mole_Card"
+    ],
+    "script": "bonus bStr, 4;\n\t\tbonus bMaxHPrate, 7;\n\t\tbonus bMaxSPrate, 7;\n\t\tbonus2 bSkillAtk, \"MC_MAMMONITE\", 20;\n\t\tbonus bSPDrainValue, 1;\n\t\tif (BaseJob == Job_Alchemist) {\n\t\t\tbonus3 bAutoSpell, \"BS_ADRENALINE\", 1, 10;\n\t\t\tbonus2 bAddMonsterDropItem, 7139, 3;\n\t\t\tbonus2 bAddMonsterDropItem, 905, 10;\n\t\t}"
+  },
+  {
+    "items": [
+      "Stainer_Card",
+      "Wander_Man_Card",
+      "Shinobi_Card",
+      "Wild_Rose_Card",
+      "Whikebain_Card"
+    ],
+    "script": "bonus bStr, 6;\n\t\tbonus bAgi, 4;\n\t\tbonus2 bSkillAtk, \"RG_BACKSTAP\", 10;\n\t\tif (getskilllv(\"RG_STRIPARMOR\") == 5)\n\t\t\tbonus3 bAutoSpell, \"RG_STRIPARMOR\", 5, 50;\n\t\tif (BaseJob == Job_Rogue) {\n\t\t\tbonus bUseSPrate, -20;\n\t\t\tbonus3 bAutoSpell, \"RG_INTIMIDATE\", 1, -20;\n\t\t}"
+  },
+  {
+    "items": [
+      "BigFoot_Card",
+      "Grizzly_Card"
+    ],
+    "script": "bonus2 bAddEffWhenHit, Eff_Blind, 600;"
+  },
+  {
+    "items": [
+      "Munak_Card",
+      "Bon_Gun_Card",
+      "Hyegun_Card"
+    ],
+    "script": "bonus bAllStats, 1;"
+  },
+  {
+    "items": [
+      "Mummy_Card",
+      "Ancient_Mummy_Card"
+    ],
+    "script": "bonus bPerfectHitAddRate, 20;"
+  },
+  {
+    "items": [
+      "Nightmare_Card",
+      "Nightmare_Terror_Card"
+    ],
+    "script": "bonus2 bAddEffWhenHit, Eff_Curse, 600;"
+  },
+  {
+    "items": [
+      "Crab_Card",
+      "Aster_Card",
+      "Shellfish_Card"
+    ],
+    "script": "bonus3 bAddMonsterDropItem, 544, RC_Fish, 3000;\n\t\tbonus2 bAddEle, Ele_Water, 30;"
+  },
+  {
+    "items": [
+      "Dark_Lord_Card",
+      "Dark_Illusion_Card"
+    ],
+    "script": "bonus bMaxHPrate, 20;\n\t\tbonus bMaxSPrate, 20;\n\t\tbonus bCastrate, -10;"
+  },
+  {
+    "items": [
+      "The_Paper_Card",
+      "Wander_Man_Card",
+      "Shinobi_Card",
+      "Wild_Rose_Card",
+      "Dancing_Dragon_Card"
+    ],
+    "script": "bonus bAgi, 5;\n\t\tbonus bStr, 5;\n\t\tbonus bAspdRate, 5;\n\t\tbonus bSpeedRate, 25;\n\t\tbonus2 bSPDrainValue, 1, 0;\n\t\tif (BaseClass == Job_Thief)\n\t\t\tbonus bNoGemStone, 0;"
+  },
+  {
+    "items": [
+      "Dragon_Tail_Card",
+      "Merman_Card",
+      "Anolian_Card",
+      "Alligator_Card",
+      "Cruiser_Card"
+    ],
+    "script": "bonus bAgi, 5;\n\t\tbonus bDex, 3;\n\t\tbonus bLongAtkRate, 20;\n\t\tbonus bPerfectHitAddRate, 20;\n\t\tif (BaseClass == Job_Archer) {\n\t\t\tbonus2 bExpAddRace, RC_Brute, 5;\n\t\t\tbonus2 bWeaponComaRace, RC_Brute, 100;\n\t\t}"
+  },
+  {
+    "items": [
+      "Dragon_Tail_Card",
+      "Anolian_Card",
+      "Alligator_Card",
+      "Cruiser_Card",
+      "Ferus__Card"
+    ],
+    "script": "bonus bDex, 5;\n\t\tbonus2 bSkillAtk, \"CG_ARROWVULCAN\", 5;\n\t\tbonus2 bSkillAtk, \"DC_THROWARROW\", 10;\n\t\tbonus2 bSkillAtk, \"BA_MUSICALSTRIKE\", 10;\n\t\tif (BaseJob == Job_Bard || BaseJob == Job_Dancer)\n\t\t\tbonus3 bAutoSpellWhenHit, \"CG_TAROTCARD\", 2, 50;"
+  },
+  {
+    "items": [
+      "Rideword_Card",
+      "Live_Peach_Tree_Card",
+      "Geographer_Card",
+      "Cookie_Card",
+      "Fur_Seal_Card"
+    ],
+    "script": "bonus bVit, 10;\n\t\tbonus bCastrate, -10;\n\t\tbonus bUseSPrate, -10;\n\t\tif (BaseClass == Job_Acolyte) {\n\t\t\tbonus2 bExpAddRace, RC_Undead, 5;\n\t\t\tbonus2 bExpAddRace, RC_Demon, 5;\n\t\t\tbonus2 bSubRace, RC_Undead, 30;\n\t\t\tbonus2 bSubRace, RC_Demon, 30;\n\t\t}"
+  },
+  {
+    "items": [
+      "Rideword_Card",
+      "Cookie_Card",
+      "Fur_Seal_Card",
+      "Waste_Stove_Card"
+    ],
+    "script": "bonus bStr, 3;\n\t\tbonus bMaxSP, 80;\n\t\tbonus bBaseAtk, 25;\n\t\tbonus3 bAutoSpell, \"AL_CRUCIS\", 5, 10;\n\t\tbonus2 bSkillAtk, \"MO_EXTREMITYFIST\", 10;\n\t\tif (BaseJob == Job_Monk) {\n\t\t\tbonus bUseSPrate, -10;\n\t\t\tbonus bNoCastCancel, 0;\n\t\t}"
+  },
+  {
+    "items": [
+      "Raggler_Card",
+      "Mystcase_Card",
+      "Baby_Leopard_Card",
+      "Zipper_Bear_Card",
+      "Hylozoist_Card"
+    ],
+    "script": "bonus bLuk, 10;\n\t\tbonus2 bSPDrainValue, 2, 0;\n\t\tbonus2 bSkillAtk, 42, 20;\n\t\tif (BaseClass == Job_Merchant) {\n\t\t\tbonus2 bAddMonsterDropItem, 617, 5;\n\t\t\tbonus bMagicDamageReturn, 20;\n\t\t}"
+  },
+  {
+    "items": [
+      "Loli_Ruri_Card",
+      "Miyabi_Ningyo_Card",
+      "Wicked_Nymph_Card",
+      "Parasite_Card",
+      "Harpy_Card",
+      "Blood_Butterfly_Card"
+    ],
+    "script": "bonus bMaxHP, 500;\n\t\tbonus bDef, 5;\n\t\tbonus bMdef, 5;\n\t\tbonus2 bSkillAtk, 14, 10;\n\t\tbonus2 bSkillAtk, 19, 10;\n\t\tbonus2 bSkillAtk, 20, 10;\n\t\tif (BaseClass == Job_Mage) {\n\t\t\tbonus bMatkRate, 3;\n\t\t\tbonus bCastrate, -15;\n\t\t}"
+  },
+  {
+    "items": [
+      "Lude_Card",
+      "Quve_Card"
+    ],
+    "script": "bonus bMaxHP, 300;\n\t\tbonus bMaxSP, 60;"
+  },
+  {
+    "items": [
+      "Miyabi_Ningyo_Card",
+      "Wicked_Nymph_Card",
+      "Harpy_Card",
+      "Blood_Butterfly_Card",
+      "Novus__Card"
+    ],
+    "script": "bonus bInt, 3;\n\t\tbonus2 bSkillAtk, \"WZ_HEAVENDRIVE\", 10;\n\t\tbonus2 bSkillAtk, \"MG_THUNDERSTORM\", 10;\n\t\tif (BaseJob == Job_Sage) {\n\t\t\tbonus bMagicDamageReturn, 20;\n\t\t\tbonus2 bAddMonsterDropItem, 716, 100;\n\t\t\tbonus2 bAddMonsterDropItem, 715, 100;\n\t\t\tbonus bCastrate, -20;\n\t\t}"
+  },
+  {
+    "items": [
+      "Succubus_Card",
+      "Incubus_Card"
+    ],
+    "script": "bonus bHPrecovRate, 30;\n\t\tbonus bSPrecovRate, 30;\n\t\tbonus bVit, 4;\n\t\tbonus bInt, 4;"
+  },
+  {
+    "items": [
+      "Solider_Card",
+      "Assulter_Card",
+      "Permeter_Card",
+      "Freezer_Card",
+      "Heater_Card"
+    ],
+    "script": "bonus bStr, 10;\n\t\tbonus bMaxHPrate, 20;\n\t\tbonus bHPrecovRate, 50;\n\t\tbonus3 bAutoSpell, \"BS_WEAPONPERFECT\", 1, 3;\n\t\tbonus2 bAddMonsterDropItem, 501, 500;\n\t\tif (BaseClass == Job_Swordman) {\n\t\t\tbonus2 bAddItemHealRate, Red_Potion, 50;\n\t\t\tbonus2 bAddItemHealRate, Yellow_Potion, 50;\n\t\t\tbonus2 bAddItemHealRate, Orange_Potion, 50;\n\t\t\tbonus2 bAddItemHealRate, White_Potion, 50;\n\t\t}"
+  },
+  {
+    "items": [
+      "C_Tower_Manager_Card",
+      "Alarm_Card",
+      "Clock_Card",
+      "Punk_Card"
+    ],
+    "script": "bonus bDef, 3;\n\t\tbonus bMdef, 3;"
+  },
+  {
+    "items": [
+      "Owl_Duke_Card",
+      "Owl_Baron_Card"
+    ],
+    "script": "bonus3 bAutoSpell, \"MG_LIGHTNINGBOLT\", 5, 20;"
+  },
+  {
+    "items": [
+      "Injustice_Card",
+      "Zherlthsh_Card"
+    ],
+    "script": "bonus bBaseAtk, 20;\n\t\tbonus bLuk, 3;"
+  },
+  {
+    "items": [
+      "Permeter_Card",
+      "Freezer_Card",
+      "Heater_Card",
+      "Archdam_Card"
+    ],
+    "script": "bonus bInt, 1;\n\t\tbonus bStr, 1;\n\t\tbonus bDef, 2;\n\t\tbonus bSPrecovRate, 10;\n\t\tbonus2 bSkillAtk, \"PA_SHIELDCHAIN\", 10;\n\t\tbonus2 bSkillAtk, \"PA_SACRIFICE\", 10;\n\t\tbonus bCastrate, -10;\n\t\tif (BaseJob == Job_Crusader)\n\t\t\tbonus bDefEle, Ele_Holy;"
+  },
+  {
+    "items": [
+      "Garm_Baby_Card",
+      "Garm_Card"
+    ],
+    "script": "bonus3 bAutoSpell, \"MG_FROSTDIVER\", 3, 250;"
+  },
+  {
+    "items": [
+      "Zombie_Slaughter_Card",
+      "Ragged_Zombie_Card"
+    ],
+    "script": "bonus2 bSPGainRace, RC_DemiPlayer, 2;"
+  },
+  {
+    "items": [
+      "Blush",
+      "Necktie"
+    ],
+    "script": "bonus bAspdRate, 3;\n\t\tbonus bCastrate, 3;"
+  },
+  {
+    "items": [
+      "Ear_Of_Devils_Wing",
+      "Darkness_Helm_J"
+    ],
+    "script": "bonus bStr, 1;\n\t\tbonus bAtkRate, 5;"
+  },
+  {
+    "items": [
+      "Ear_Of_Angels_Wing",
+      "Darkness_Helm_J"
+    ],
+    "script": "bonus bStr, 1;\n\t\tbonus bAspdRate, 2;"
+  },
+  {
+    "items": [
+      "Alarm_Mask",
+      "Wit_Pumpkin_Hat"
+    ],
+    "script": "bonus2 bAddMonsterDropItem, 12192, 1;\n\t\tbonus2 bAddMonsterDropItem, 538, 1;\n\t\tbonus2 bAddItemHealRate, 12192, 100;\n\t\tbonus2 bAddItemHealRate, 538, 100;"
+  },
+  {
+    "items": [
+      "Hahoe_Mask",
+      "Wit_Pumpkin_Hat"
+    ],
+    "script": "bonus bAspdRate, 5;\n\t\tautobonus \"{ bonus bAtk,50; }\", 5, 10000, 0, \"{ specialeffect(EF_POTION_BERSERK, AREA, playerattached()); }\";"
+  },
+  {
+    "items": [
+      "Pecopeco_Wing_Ears",
+      "Darkness_Helm_J"
+    ],
+    "script": "bonus bAgi, 1;\n\t\tbonus bFlee, 3;"
+  },
+  {
+    "items": [
+      "Black_Glasses",
+      "Darkness_Helm_J"
+    ],
+    "script": "bonus bInt, 1;\n\t\tbonus bMatkRate, 2;"
+  },
+  {
+    "items": [
+      "Pencil_In_Mouth",
+      "Cap_Of_Concentration"
+    ],
+    "script": "bonus bDex, 2;\n\t\tbonus bDef, 2;"
+  },
+  {
+    "items": [
+      "Twilight_Desert",
+      "Sandstorm"
+    ],
+    "script": "bonus bMaxSP, 20;\n\t\tbonus bMaxHPrate, 5;\n\t\tbonus bHit, 10;\n\t\tbonus2 bAddSize, Size_Large, 30;\n\t\tautobonus \"{ bonus bAspdRate,100; }\", 1, 7000, 0, \"{ specialeffect(EF_POTION_BERSERK, AREA, playerattached()); }\";"
+  },
+  {
+    "items": [
+      "Elven_Ears_",
+      "Skull_Cap"
+    ],
+    "script": "bonus bUseSPrate, -3;"
+  }
+]

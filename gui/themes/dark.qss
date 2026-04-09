@@ -1,0 +1,633 @@
+/* ==========================================================================
+   PS Calc — Dark Theme
+   All colors, fonts, and widget rules live here. No inline styles in code.
+   ========================================================================== */
+
+/* ── Global ──────────────────────────────────────────────────────────────── */
+QMainWindow, QDialog {
+    background-color: #1e2025;
+}
+
+QWidget {
+    background-color: #1e2025;
+    color: #dde1e8;
+    font-family: "Segoe UI", "Ubuntu", sans-serif;
+}
+
+/* ── Top Bar ─────────────────────────────────────────────────────────────── */
+QFrame#top_bar {
+    background-color: #252830;
+    border-bottom: 1px solid #3a3f50;
+}
+
+QLabel#app_title {
+    font-weight: bold;
+    color: #4d8fff;
+}
+
+QLabel#version_label {
+    color: #7a8299;
+    font-size: 10px;
+}
+
+/* ── Section Header ──────────────────────────────────────────────────────── */
+QFrame#section_header {
+    background-color: #2a2f3d;
+    border-top: 1px solid #3a3f50;
+    border-bottom: 1px solid #3a3f50;
+}
+
+QFrame#section_header:hover {
+    background-color: #323848;
+}
+
+QLabel#section_arrow {
+    color: #6b7480;
+}
+
+QLabel#section_title {
+    font-weight: bold;
+    color: #b8bfcc;
+    letter-spacing: 0.5px;
+}
+
+/* ── Section Content ─────────────────────────────────────────────────────── */
+QFrame#section_content {
+    background-color: #1e2025;
+    border-bottom: 1px solid #2a2f3d;
+}
+
+/* ── Panel (QScrollArea) ─────────────────────────────────────────────────── */
+QScrollArea {
+    border: none;
+    background-color: #1e2025;
+}
+
+QScrollArea > QWidget > QWidget {
+    background-color: #1e2025;
+}
+
+QWidget#panel_inner {
+    background-color: #1e2025;
+}
+
+/* ── Splitter ────────────────────────────────────────────────────────────── */
+QSplitter::handle {
+    background-color: #3a3f50;
+    width: 3px;
+    height: 3px;
+}
+
+QSplitter::handle:hover {
+    background-color: #4d8fff;
+}
+
+/* ── Buttons ─────────────────────────────────────────────────────────────── */
+QPushButton {
+    background-color: #2a2f3d;
+    border: 1px solid #3a3f50;
+    border-radius: 4px;
+    padding: 2px 6px;
+    color: #dde1e8;
+    min-height: 22px;
+}
+
+QPushButton:hover {
+    background-color: #353a4a;
+    border-color: #505669;
+}
+
+QPushButton:pressed {
+    background-color: #1e2230;
+}
+
+QPushButton:disabled {
+    color: #4a5060;
+    border-color: #252830;
+    background-color: #252830;
+}
+
+QPushButton:checked {
+    background-color: #1a3a5c;
+    border-color: #4d8fff;
+    color: #4d8fff;
+}
+
+QPushButton#focus_btn {
+    min-width: 88px;
+    font-weight: bold;
+}
+
+QPushButton#focus_btn:hover {
+    background-color: #1a3a5c;
+    border-color: #4d8fff;
+    color: #4d8fff;
+}
+
+/* ── ComboBox ────────────────────────────────────────────────────────────── */
+QComboBox {
+    background-color: #2a2f3d;
+    border: 1px solid #3a3f50;
+    border-radius: 4px;
+    padding: 3px 8px 3px 8px;
+    color: #dde1e8;
+    min-height: 22px;
+}
+
+QComboBox:hover {
+    border-color: #505669;
+}
+
+QComboBox:focus {
+    border-color: #4d8fff;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #3a3f50;
+    border-radius: 0 4px 4px 0;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #2a2f3d;
+    border: 1px solid #3a3f50;
+    outline: none;
+    selection-background-color: #1a3a5c;
+    selection-color: #dde1e8;
+}
+
+/* ── Scrollbar ───────────────────────────────────────────────────────────── */
+QScrollBar:vertical {
+    background: #1e2025;
+    width: 8px;
+    margin: 0;
+    border: none;
+}
+
+QScrollBar::handle:vertical {
+    background: #3a3f50;
+    border-radius: 4px;
+    min-height: 24px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #505669;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0;
+    background: none;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+QScrollBar:horizontal {
+    height: 0;
+}
+
+/* ── Labels (generic) ────────────────────────────────────────────────────── */
+QLabel {
+    background-color: transparent;
+}
+
+QLabel[muted="true"] {
+    color: #8892a2;
+}
+
+/* ── Placeholder content label (stubs) ──────────────────────────────────── */
+QLabel#stub_label {
+    color: #4a5060;
+    font-style: italic;
+    padding: 12px 0;
+}
+
+/* ── SpinBox ─────────────────────────────────────────────────────────────── */
+QSpinBox {
+    background-color: #2a2f3d;
+    border: 1px solid #3a3f50;
+    border-radius: 3px;
+    padding: 2px 4px;
+    color: #dde1e8;
+    min-height: 20px;
+}
+
+QSpinBox:hover { border-color: #505669; }
+QSpinBox:focus { border-color: #4d8fff; }
+QSpinBox:disabled {
+    background-color: #222530;
+    border-color: #2e3244;
+    color: #555a6a;
+}
+
+QSpinBox::up-button, QSpinBox::down-button {
+    width: 16px;
+    border: none;
+    background: #252830;
+}
+
+QSpinBox::up-button:hover, QSpinBox::down-button:hover {
+    background: #3a3f50;
+}
+
+QSpinBox::up-button:disabled, QSpinBox::down-button:disabled {
+    background: #1e2028;
+}
+
+QSpinBox::up-arrow {
+    image: url(gui/themes/icons/plus.svg);
+    width: 8px;
+    height: 8px;
+}
+
+QSpinBox::up-arrow:disabled {
+    image: url(gui/themes/icons/plus_disabled.svg);
+}
+
+QSpinBox::down-arrow {
+    image: url(gui/themes/icons/minus.svg);
+    width: 8px;
+    height: 8px;
+}
+
+QSpinBox::down-arrow:disabled {
+    image: url(gui/themes/icons/minus_disabled.svg);
+}
+
+QSpinBox::up-arrow:disabled {
+    color: #3e4455;
+}
+
+QSpinBox::down-arrow:disabled {
+    color: #3e4455;
+}
+
+/* ── LineEdit ────────────────────────────────────────────────────────────── */
+QLineEdit {
+    background-color: #2a2f3d;
+    border: 1px solid #3a3f50;
+    border-radius: 3px;
+    padding: 3px 6px;
+    color: #dde1e8;
+    min-height: 22px;
+}
+
+QLineEdit:hover { border-color: #505669; }
+QLineEdit:focus { border-color: #4d8fff; }
+
+/* ── CheckBox ────────────────────────────────────────────────────────────── */
+QCheckBox {
+    color: #dde1e8;
+    spacing: 5px;
+}
+
+QCheckBox::indicator {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #3a3f50;
+    border-radius: 2px;
+    background-color: #2a2f3d;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #1a3a5c;
+    border-color: #4d8fff;
+    image: url(gui/themes/icons/check.svg);
+}
+
+QCheckBox::indicator:hover { border-color: #505669; }
+
+/* ── RadioButton ─────────────────────────────────────────────────────────── */
+QRadioButton {
+    color: #dde1e8;
+    spacing: 5px;
+}
+
+QRadioButton::indicator {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #3a3f50;
+    border-radius: 7px;
+    background-color: #2a2f3d;
+}
+
+QRadioButton::indicator:checked {
+    background-color: #4d8fff;
+    border-color: #4d8fff;
+}
+
+/* ── Phase 1.2 Stats Section ─────────────────────────────────────────────── */
+QLabel#stat_points_label {
+    color: #8892a2;
+    padding-bottom: 4px;
+}
+
+QLabel#stat_col_header {
+    color: #8892a2;
+    font-weight: bold;
+}
+
+QLabel#stat_row_label {
+    color: #dde1e8;
+    font-weight: bold;
+    min-width: 32px;
+}
+
+QLabel#stat_operator { color: #6b7480; }
+
+/* G15: auto-computed bonus label (read-only, sourced from gear/AI/MA) */
+QLabel#stat_bonus_auto {
+    color: #a8b4c2;
+    font-style: italic;
+}
+
+QLabel#stat_total {
+    color: #4d8fff;
+    font-weight: bold;
+}
+
+QLabel#stat_sub_header {
+    color: #6b7480;
+    margin-top: 6px;
+    margin-bottom: 2px;
+}
+
+QLabel#flat_bonus_label {
+    color: #8892a2;
+}
+
+QLabel#compact_stat_label {
+    color: #b8bfcc;
+    min-width: 90px;
+}
+
+/* ── Phase 1.3 Derived Stats ─────────────────────────────────────────────── */
+QLabel#derived_stat_label {
+    color: #8892a2;
+    min-width: 48px;
+}
+
+QLabel#derived_stat_value {
+    color: #dde1e8;
+}
+
+/* ── Phase 1.4 Equipment Section ─────────────────────────────────────────── */
+QLabel#equip_slot_label {
+    color: #8892a2;
+}
+
+QLabel#equip_item_label { color: #dde1e8; }
+
+/* G39: inline slot quick-select combo — override global min-width */
+QComboBox#equip_inline_combo {
+    min-width: 80px;
+    min-height: 18px;
+    padding: 1px 6px;
+}
+
+QComboBox#equip_inline_combo:disabled {
+    color: #4a5060;
+    background-color: #22252e;
+    border-color: #2a2f3a;
+}
+
+QPushButton#equip_edit_btn {
+    min-height: 18px;
+    padding: 2px 6px;
+}
+
+QLabel#compact_equip_weapon {
+    color: #dde1e8;
+    font-weight: bold;
+}
+
+QLabel#compact_equip_summary {
+    color: #8892a2;
+}
+
+/* ── G46/G47 Active Items / Manual Adjustments ───────────────────────────── */
+QLabel#active_items_note {
+    color: #6b7480;
+    font-style: italic;
+    margin-bottom: 4px;
+}
+
+QLabel#ps_skill_tooltip {
+    color: #a0b4cc;
+    font-size: 11px;
+    padding: 2px 0px;
+}
+
+/* ── Phase 1.5 Passive Section ───────────────────────────────────────────── */
+QLabel#passive_sub_header {
+    color: #6b7480;
+    font-weight: bold;
+    margin-top: 6px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #2a2f3d;
+}
+
+QLabel#passive_placeholder {
+    color: #4a5060;
+    font-style: italic;
+}
+
+QLabel#passive_sub_separator {
+    color: #4a5060;
+    font-style: italic;
+}
+
+QLabel#passive_mastery_label {
+    color: #b8bfcc;
+}
+
+QLabel#passive_compact_summary {
+    color: #b8bfcc;
+}
+
+/* ── QTableWidget (Step Breakdown) ──────────────────────────────────────── */
+QTableWidget {
+    background-color: #1e2025;
+    alternate-background-color: #23272e;
+    border: 1px solid #2a2f3d;
+    gridline-color: transparent;
+    color: #dde1e8;
+}
+
+QTableWidget::item {
+    padding: 3px 6px;
+}
+
+QTableWidget::item:selected {
+    background-color: #1a3a5c;
+    color: #dde1e8;
+}
+
+QHeaderView::section {
+    background-color: #2a2f3d;
+    color: #8892a2;
+    font-weight: bold;
+    border: none;
+    border-bottom: 1px solid #3a3f50;
+    padding: 3px 6px;
+}
+
+/* ── QListWidget (mob search results) ───────────────────────────────────── */
+QListWidget {
+    background-color: #2a2f3d;
+    border: 1px solid #3a3f50;
+    border-radius: 3px;
+    color: #dde1e8;
+    outline: none;
+}
+
+QListWidget::item {
+    padding: 3px 8px;
+}
+
+QListWidget::item:hover {
+    background-color: #323848;
+}
+
+QListWidget::item:selected {
+    background-color: #1a3a5c;
+}
+
+/* ── Phase 2.1 Combat Controls ───────────────────────────────────────────── */
+QLabel#combat_field_label {
+    color: #8892a2;
+    min-width: 52px;
+}
+
+QLabel#combat_target_display {
+    background-color: #1a2035;
+    border: 1px solid #2d3a52;
+    border-radius: 4px;
+    padding: 5px 8px;
+    color: #cfd8e8;
+    font-weight: bold;
+}
+
+QPushButton#target_mode_btn {
+    min-width: 56px;
+}
+
+QPushButton#target_mode_btn:checked {
+    color: #e05555;
+    border-color: #993333;
+}
+
+QLabel#combat_env_placeholder {
+    color: #4a5060;
+    font-style: italic;
+}
+
+/* ── Phase 2.2 Summary ───────────────────────────────────────────────────── */
+QLabel#summary_label {
+    color: #8892a2;
+    min-width: 60px;
+}
+
+QLabel#summary_col_header {
+    color: #6b7480;
+    font-weight: bold;
+}
+
+QLabel#summary_value {
+    color: #dde1e8;
+    font-weight: bold;
+    min-width: 55px;
+}
+
+QLabel#summary_crit_pct {
+    color: #f0a020;
+}
+
+QLabel#summary_hit_pct {
+    color: #4d8fff;
+}
+
+QLabel#summary_no_data {
+    color: #4a5060;
+    font-style: italic;
+}
+
+/* ── Phase 2.3 Step Breakdown compact rows ───────────────────────────────── */
+QWidget[alt_row="true"]  { background-color: #23272e; }
+QWidget[alt_row="false"] { background-color: #1e2025; }
+
+QLabel#compact_step_name {
+    color: #b8bfcc;
+}
+
+QLabel#compact_step_val {
+    color: #4d8fff;
+    font-weight: bold;
+}
+
+/* ── G45 Step tooltip ────────────────────────────────────────────────────── */
+QToolTip {
+    background-color: #1a1d23;
+    color: #c8cdd8;
+    border: 1px solid #3a3f4b;
+    padding: 4px 6px;
+}
+
+/* ── Phase 3.1 Target Info ───────────────────────────────────────────────── */
+QLabel#target_stat_label {
+    color: #8892a2;
+    min-width: 48px;
+}
+
+QLabel#target_stat_value {
+    color: #dde1e8;
+}
+
+QLabel#target_section_header {
+    color: #6a7383;
+    font-weight: bold;
+    padding-top: 4px;
+}
+
+QLabel#target_compact_summary {
+    color: #b8bfcc;
+}
+
+/* ── Phase 3.2 Incoming Damage ───────────────────────────────────────────── */
+QLabel#incoming_value {
+    color: #dde1e8;
+}
+
+/* ── Session M0: CollapsibleSubGroup ─────────────────────────────────────── */
+QFrame#subgroup_header {
+    background-color: #242830;
+    border-top: 1px solid #30363f;
+    border-bottom: 1px solid #30363f;
+}
+
+QFrame#subgroup_header:hover {
+    background-color: #2c3240;
+}
+
+QLabel#subgroup_arrow {
+    color: #5a6070;
+}
+
+QLabel#subgroup_title {
+    color: #8a9099;
+    font-weight: bold;
+}
+
+/* ── Scale Toast ─────────────────────────────────────────────────────────── */
+QLabel#scale_toast {
+    background-color: #2a2f3d;
+    border: 1px solid #4d8fff;
+    border-radius: 4px;
+    color: #4d8fff;
+    padding: 4px 10px;
+}

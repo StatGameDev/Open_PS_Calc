@@ -1,0 +1,20 @@
+{
+  "comment": "Exact mapping from battle_addmastery switch (pre-renewal).",
+  "mapping": {
+    "1HSword": "SM_SWORD",
+    "Knife": "SM_SWORD",
+    "2HSword": "SM_TWOHANDSWORD",
+    "1HSpear": "KN_SPEARMASTERY",
+    "2HSpear": "KN_SPEARMASTERY",
+    "1HAxe": "AM_AXEMASTERY",
+    "2HAxe": "AM_AXEMASTERY",
+    "Mace": "PR_MACEMASTERY",
+    "2HMace": "PR_MACEMASTERY",
+    "Unarmed": "MO_IRONHAND",
+    "Knuckle": "MO_IRONHAND",
+    "MusicalInstrument": "BA_MUSICALLESSON",
+    "Whip": "DC_DANCINGLESSON",
+    "Book": "SA_ADVANCEDBOOK",
+    "Katar": "AS_KATAR"
+  }
+}

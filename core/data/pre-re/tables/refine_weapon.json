@@ -1,0 +1,5 @@
+{
+  "bonus":              [0,   2,   3,   5,    7],
+  "safe_refine_start":  [0,   8,   7,   6,    5],
+  "random_bonus_value": [0, 300, 500, 800, 1300]
+}

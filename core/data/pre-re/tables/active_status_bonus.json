@@ -1,0 +1,12 @@
+{
+  "comment": "Pre-renewal flat and rate bonuses from SC_* in battle_calc_weapon_attack / battle_calc_masteryfix. SC_MAXIMIZEPOWER removed (variance collapse only — handled in base_damage.py). SC_SPURT removed (hallucinated — zero results in Hercules src/ and db/). SC_GS_MADNESSCANCEL removed (#ifdef RENEWAL in battle_calc_masteryfix). SC_IMPOSITIO removed (#ifdef RENEWAL in battle_calc_masteryfix). SC_OVERTHRUST/SC_OVERTHRUSTMAX removed (skillratio bonus — handled in skill_ratio.py).",
+  "bonuses": {
+    "SC_AURABLADE": {
+      "type": "flat_per_level",
+      "val_source": "val1",
+      "multiplier": 20,
+      "exclusions": ["LK_SPIRALPIERCE", "ML_SPIRALPIERCE"],
+      "hercules_ref": "battle_calc_weapon_attack: if (sc && sc->data[SC_AURABLADE] && skill_id != LK_SPIRALPIERCE && skill_id != ML_SPIRALPIERCE) { int lv = sc->data[SC_AURABLADE]->val1; ATK_ADD(wd.damage, wd.damage2, 20 * lv); }"
+    }
+  }
+}

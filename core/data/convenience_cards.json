@@ -1,0 +1,35 @@
+[
+  {
+    "id": -1,
+    "name": "+5 ATK / +15% All Sizes",
+    "aegis_name": "Conv_AtkSize",
+    "type": "IT_CARD",
+    "loc": ["EQP_WEAPON", "EQP_ARMS"],
+    "script": "bonus bBaseAtk,5;\n\t\tbonus2 bAddSize,Size_Small,15;\n\t\tbonus2 bAddSize,Size_Medium,15;\n\t\tbonus2 bAddSize,Size_Large,15;",
+    "compound_on": "Weapon",
+    "_pinned": true,
+    "description": "+5 base ATK. +15% damage vs all sizes (S/M/L).\nConvenience card — not a real item."
+  },
+  {
+    "id": -2,
+    "name": "+20% All Races",
+    "aegis_name": "Conv_RaceAll20",
+    "type": "IT_CARD",
+    "loc": ["EQP_WEAPON", "EQP_ARMS"],
+    "script": "bonus2 bAddRace,RC_Formless,20;\n\t\tbonus2 bAddRace,RC_Undead,20;\n\t\tbonus2 bAddRace,RC_Brute,20;\n\t\tbonus2 bAddRace,RC_Plant,20;\n\t\tbonus2 bAddRace,RC_Insect,20;\n\t\tbonus2 bAddRace,RC_Fish,20;\n\t\tbonus2 bAddRace,RC_Demon,20;\n\t\tbonus2 bAddRace,RC_DemiHuman,20;\n\t\tbonus2 bAddRace,RC_Angel,20;\n\t\tbonus2 bAddRace,RC_Dragon,20;\n\t\tbonus2 bAddRace,RC_Player,20;",
+    "compound_on": "Weapon",
+    "_pinned": true,
+    "description": "+20% damage vs all specific races.\nConvenience card — not a real item.\nStacks multiplicatively with Abysmal Knight (RC_Boss = separate step)."
+  },
+  {
+    "id": -3,
+    "name": "+20% All Elements",
+    "aegis_name": "Conv_EleAll20",
+    "type": "IT_CARD",
+    "loc": ["EQP_WEAPON", "EQP_ARMS"],
+    "script": "bonus2 bAddEle,Ele_Neutral,20;\n\t\tbonus2 bAddEle,Ele_Water,20;\n\t\tbonus2 bAddEle,Ele_Earth,20;\n\t\tbonus2 bAddEle,Ele_Fire,20;\n\t\tbonus2 bAddEle,Ele_Wind,20;\n\t\tbonus2 bAddEle,Ele_Poison,20;\n\t\tbonus2 bAddEle,Ele_Holy,20;\n\t\tbonus2 bAddEle,Ele_Dark,20;\n\t\tbonus2 bAddEle,Ele_Ghost,20;\n\t\tbonus2 bAddEle,Ele_Undead,20;",
+    "compound_on": "Weapon",
+    "_pinned": true,
+    "description": "+20% damage vs all elements.\nConvenience card — not a real item."
+  }
+]

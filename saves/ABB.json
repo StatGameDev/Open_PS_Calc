@@ -1,0 +1,130 @@
+{
+  "name": "ABB",
+  "job_id": 11,
+  "base_level": 99,
+  "job_level": 50,
+  "base_stats": {
+    "str": 1,
+    "agi": 99,
+    "vit": 1,
+    "int": 4,
+    "dex": 77,
+    "luk": 56
+  },
+  "bonus_stats": {
+    "str": 0,
+    "agi": 0,
+    "vit": 0,
+    "int": 0,
+    "dex": 0,
+    "luk": 0,
+    "hit": 0,
+    "flee": 0,
+    "cri": 0,
+    "batk": 0,
+    "def": 0,
+    "def2": 0,
+    "aspd_percent": 0
+  },
+  "target_mob_id": 1373,
+  "equipped": {
+    "right_hand": 1705,
+    "left_hand": null,
+    "ammo": 1764,
+    "armor": 81008,
+    "garment": 2525,
+    "footwear": 2407,
+    "acc_l": 2625,
+    "acc_r": 8279,
+    "head_top": 2274,
+    "head_mid": 2296,
+    "head_low": 5548,
+    "right_hand_card_0": 4140,
+    "right_hand_card_1": 4140,
+    "right_hand_card_2": 4140,
+    "right_hand_card_3": 8238,
+    "armor_card_0": 4337,
+    "garment_card_0": 4129,
+    "acc_l_card_0": 4272
+  },
+  "refine": {
+    "right_hand": 10,
+    "left_hand": 0,
+    "armor": 4,
+    "garment": 4,
+    "footwear": 4,
+    "head_top": 4,
+    "head_mid": 0,
+    "head_low": 0
+  },
+  "weapon_element": null,
+  "active_buffs": {
+    "SC_CONCENTRATION": 10
+  },
+  "mastery_levels": {
+    "HT_BEASTBANE": 10,
+    "HT_BLITZBEAT": 5,
+    "HT_STEELCROW": 10,
+    "AC_OWL": 10,
+    "AC_VULTURE": 10
+  },
+  "flags": {
+    "is_ranged_override": null,
+    "is_riding_peco": false,
+    "no_sizefix": false,
+    "armor_element": 0
+  },
+  "server": "payon_stories",
+  "manual_adj": {
+    "cri": 5,
+    "crit_dmg_pct": 50
+  },
+  "support_buffs": {
+    "SC_SIEGFRIED": 0,
+    "SC_BLESSING": 10,
+    "SC_INC_AGI": 10,
+    "SC_GLORIA": 1,
+    "SC_IMPOSITIO": 5,
+    "SC_SUFFRAGIUM": 3,
+    "SC_ASPERSIO": 1
+  },
+  "player_active_scs": {},
+  "song_state": {
+    "SC_ASSNCROS": 0,
+    "SC_ASSNCROS_agi": 1,
+    "SC_ASSNCROS_lesson": 10,
+    "SC_WHISTLE": 0,
+    "SC_WHISTLE_agi": 1,
+    "SC_WHISTLE_luk": 1,
+    "SC_WHISTLE_lesson": 10,
+    "SC_APPLEIDUN": 0,
+    "SC_APPLEIDUN_vit": 1,
+    "SC_APPLEIDUN_lesson": 10,
+    "SC_POEMBRAGI": 0,
+    "SC_POEMBRAGI_dex": 1,
+    "SC_POEMBRAGI_int": 1,
+    "SC_POEMBRAGI_lesson": 10,
+    "SC_HUMMING": 0,
+    "SC_HUMMING_dex": 1,
+    "SC_HUMMING_lesson": 10,
+    "SC_FORTUNE": 0,
+    "SC_FORTUNE_luk": 1,
+    "SC_FORTUNE_lesson": 10,
+    "SC_SERVICEFORYU": 0,
+    "SC_SERVICEFORYU_int": 1,
+    "SC_SERVICEFORYU_lesson": 10,
+    "SC_DRUMBATTLE": 0,
+    "SC_NIBELUNGEN": 0
+  },
+  "consumable_buffs": {
+    "aspd_potion": 2
+  },
+  "clan": "crossbow_clan",
+  "selected_pet": "Poring",
+  "cached_display": {
+    "job_name": "Hunter",
+    "hp": 4786,
+    "def_": 0,
+    "mdef": 0
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "_comment": "compact_modes is a list of flags applied when a section's owning panel is NOT focused. Flags: 'slim_content' (show compact widget instead of full), 'header_summary' (summary text always in header; auto-collapses when slim), 'hidden' (hide entirely). snap_threshold is the builder_fraction distance within which a manual splitter drag snaps to that named state.",
+  "focus_states": {
+    "builder_focused": { "builder_fraction": 0.62 },
+    "combat_focused":  { "builder_fraction": 0.35 }
+  },
+  "snap_threshold": 0.05,
+  "sections": [
+    {
+      "key": "build_header",
+      "panel": "builder",
+      "display_name": "Build",
+      "default_collapsed": false,
+      "compact_modes": []
+    },
+    {
+      "key": "stats_section",
+      "panel": "builder",
+      "display_name": "Stats",
+      "default_collapsed": false,
+      "compact_modes": ["slim_content"]
+    },
+    {
+      "key": "equipment_section",
+      "panel": "builder",
+      "display_name": "Equipment",
+      "default_collapsed": false,
+      "compact_modes": ["slim_content"]
+    },
+    {
+      "key": "passive_section",
+      "panel": "builder",
+      "display_name": "Passives",
+      "default_collapsed": false,
+      "compact_modes": ["header_summary"]
+    },
+    {
+      "key": "buffs_section",
+      "panel": "builder",
+      "display_name": "Buffs",
+      "default_collapsed": false,
+      "compact_modes": ["header_summary"]
+    },
+    {
+      "key": "consumables_section",
+      "panel": "builder",
+      "display_name": "Consumables",
+      "default_collapsed": true,
+      "compact_modes": ["header_summary"]
+    },
+    {
+      "key": "misc_section",
+      "panel": "builder",
+      "display_name": "Active Effects",
+      "default_collapsed": true,
+      "compact_modes": ["header_summary"]
+    },
+    {
+      "key": "active_items_section",
+      "panel": "builder",
+      "display_name": "Manual Adjustments",
+      "default_collapsed": true,
+      "compact_modes": []
+    },
+    {
+      "key": "player_debuffs_section",
+      "panel": "builder",
+      "display_name": "Player Debuffs",
+      "default_collapsed": true,
+      "compact_modes": ["slim_content"]
+    },
+    {
+      "key": "combat_controls",
+      "panel": "combat",
+      "display_name": "Combat Controls",
+      "default_collapsed": false,
+      "compact_modes": []
+    },
+    {
+      "key": "target_section",
+      "panel": "combat",
+      "display_name": "Target Info",
+      "default_collapsed": false,
+      "compact_modes": ["slim_content"]
+    },
+    {
+      "key": "summary_section",
+      "panel": "combat",
+      "display_name": "Summary",
+      "default_collapsed": false,
+      "compact_modes": []
+    },
+    {
+      "key": "target_state_section",
+      "panel": "combat",
+      "display_name": "Target State",
+      "default_collapsed": true,
+      "compact_modes": ["slim_content"]
+    },
+    {
+      "key": "step_breakdown",
+      "panel": "combat",
+      "display_name": "Step Breakdown",
+      "default_collapsed": true,
+      "compact_modes": ["hidden"]
+    },
+    {
+      "key": "incoming_damage",
+      "panel": "combat",
+      "display_name": "Incoming Damage",
+      "default_collapsed": true,
+      "compact_modes": []
+    }
+  ]
+}

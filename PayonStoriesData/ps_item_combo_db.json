@@ -1,0 +1,26 @@
+[
+  {
+    "items": ["Ancient_Mummy_Card", "Mummy_Card"],
+    "script": "bonus bHolyStrikeChance,5;"
+  },
+  {
+    "items": ["Necrofantasy_Muffler", "Necrofantasy_Shoes"],
+    "script": "bonus2 bAddEle,Ele_Ghost,20; bonus2 bAddEle,Ele_Undead,20;"
+  },
+  {
+    "items": ["Heavy_Gunner_Armor", "Rolling_Stone"],
+    "script": "bonus bMaxHP,150; bonus2 bSubRace,RC_DemiHuman,3;"
+  },
+  {
+    "items": ["Heavy_Gunner_Armor", "Black_Rose"],
+    "script": "bonus bMaxHP,150; bonus2 bSubRace,RC_DemiHuman,3;"
+  },
+  {
+    "items": ["Heavy_Gunner_Armor", "Rolling_Stone__"],
+    "script": "bonus bMaxHP,150; bonus2 bSubRace,RC_DemiHuman,3;"
+  },
+  {
+    "items": ["Gunner_Goggles", "Oxygen_Mask"],
+    "script": "bonus2 bAddItemHealRate,501,20; bonus2 bAddItemHealRate,502,20; bonus2 bAddItemHealRate,503,20; bonus2 bAddItemHealRate,504,20;"
+  }
+]

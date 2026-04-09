@@ -1,0 +1,1740 @@
+{
+  "1327": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "weapon_type": "1HAxe",
+    "slots": 2,
+    "aegis_name": "Masterwork_Axe",
+    "job": [
+      0,
+      1,
+      5,
+      7,
+      10,
+      12,
+      14,
+      18,
+      4008,
+      4011,
+      4013,
+      4015,
+      4019
+    ],
+    "atk": 110,
+    "weapon_level": 3,
+    "equip_level": 27,
+    "refineable": true,
+    "script": ""
+  },
+  "4039": {
+    "script": "bonus2 bResEff,Eff_Silence,2000; bonus bDef,1; bonus bFlee,4;"
+  },
+  "4041": {},
+  "4046": {
+    "script": "bonus2 bResEff,Eff_Blind,2000; bonus2 bSubEle,Ele_Neutral,3;"
+  },
+  "4101": {
+    "script": "bonus bDefEle,Ele_Earth; bonus bDef,1; bonus2 bSubEle,Ele_Earth,25;"
+  },
+  "4110": {
+    "script": "bonus2 bResEff,Eff_Poison,2000; bonus bDef,1; bonus2 bResEff,Eff_Curse,2500;"
+  },
+  "4117": {
+    "script": "skill TF_DOUBLE,2; bonus bDoubleRate,5;"
+  },
+  "4125": {
+    "script": "bonus2 bAddEle,Ele_Fire,25; bonus2 bSubEle,Ele_Fire,-5;"
+  },
+  "4132": {
+    "script": "bonus bNoGemStone,0;"
+  },
+  "4159": {
+    "script": "bonus bAgi,2; if(getrefine()>=8) { bonus bFlee,20; }"
+  },
+  "4162": {},
+  "4165": {
+    "script": "bonus2 bSPGainRace,RC_Insect,5; bonus2 bAddRace,RC_Insect,4;"
+  },
+  "4167": {
+    "script": "bonus2 bSPGainRace,RC_Brute,5; bonus2 bAddRace,RC_Brute,4;"
+  },
+  "4180": {
+    "script": "bonus2 bSPGainRace,RC_Dragon,5; bonus2 bAddRace,RC_Dragon,4;"
+  },
+  "4182": {
+    "script": "bonus2 bSPGainRace,RC_Demon,5; bonus2 bAddRace,RC_Demon,4;"
+  },
+  "4200": {
+    "script": "if(getrefine()<6) { bonus bMdef,10; }"
+  },
+  "4215": {},
+  "4216": {},
+  "4226": {
+    "script": "bonus bDef,2; bonus bDef,getrefine()/2; bonus bMdef,getrefine()/2; if(getrefine()>=8) { bonus bMdef,5; }"
+  },
+  "4232": {},
+  "4240": {
+    "script": "bonus bDef,2; bonus bMdef,3; if(getrefine()<=5) { bonus bMdef,getrefine(); }"
+  },
+  "4248": {
+    "script": "bonus3 bAutoSpell,AL_CRUCIS,5,30;"
+  },
+  "4259": {
+    "script": "bonus bDef,1; bonus bHPrecovRate,30; bonus bHealPower,10;"
+  },
+  "4260": {
+    "script": "bonus bDef,1; bonus2 bResEff,Eff_Confusion,2000; bonus bLongAtkDef,4;"
+  },
+  "4274": {
+    "script": "bonus2 bSPGainRace,RC_Undead,5; bonus2 bAddRace,RC_Undead,4;"
+  },
+  "4282": {},
+  "4286": {},
+  "4289": {
+    "script": "bonus2 bSPGainRace,RC_Plant,5; bonus2 bAddRace,RC_Plant,4;"
+  },
+  "4299": {
+    "script": "bonus bDef,1; bonus3 bAutoSpellWhenHit,CR_AUTOGUARD,4,30;"
+  },
+  "4304": {
+    "script": "bonus bDef,2; bonus2 bSkillAtk,CR_SHIELDCHARGE,30; bonus2 bSkillAtk,CR_SHIELDBOOMERANG,30;"
+  },
+  "4307": {
+    "script": "bonus2 bSPGainRace,RC_Fish,5; bonus2 bAddRace,RC_Fish,4;"
+  },
+  "4308": {
+    "script": "bonus2 bSPGainRace,RC_Formless,5; bonus2 bAddRace,RC_Formless,4;"
+  },
+  "4318": {
+    "script": "bonus3 bAutoSpell,WZ_STORMGUST,3,20; bonus2 bAddEff,Eff_Freeze,2000;"
+  },
+  "4319": {
+    "script": "bonus bMaxHP,300; if(getrefine()>=7) { bonus2 bSkillAtk,SM_BASH,10; }"
+  },
+  "4320": {
+    "script": "bonus3 bAutoSpell,WZ_METEOR,3,20;"
+  },
+  "4329": {
+    "script": "bonus2 bSPGainRace,RC_DemiHuman,5; bonus2 bAddRace,RC_DemiHuman,4;"
+  },
+  "4336": {
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "script": "bonus2 bAddEle,Ele_Earth,25; bonus2 bSubEle,Ele_Earth,-5;"
+  },
+  "4375": {
+    "script": "if(getrefine()>=8) { bonus2 bSubEle,Ele_Neutral,15; bonus bFlee,15; } else { bonus2 bSubEle,Ele_Neutral,10; bonus bFlee,10; }"
+  },
+  "4377": {},
+  "4380": {
+    "script": "bonus2 bSkillAtk,WZ_FIREPILLAR,5; bonus2 bSkillAtk,WZ_METEOR,5; bonus2 bSkillAtk,WZ_SIGHTRASHER,5; bonus2 bSkillAtk,MG_FIREWALL,5; bonus2 bSkillAtk,MG_FIREBALL,5;"
+  },
+  "4384": {
+    "script": "bonus3 bAutoSpell,SA_SPELLBREAKER,1,100; bonus3 bAutoSpell,SA_DISPELL,5,100;"
+  },
+  "4416": {
+    "script": "bonus2 bSkillAtk,MG_COLDBOLT,15; bonus2 bCastrate,MG_COLDBOLT,-15;"
+  },
+  "8000": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "slots": 0,
+    "aegis_name": "Assassin_Fly_Card",
+    "script": "bonus bHit,5; bonus2 bHPDrainRate,1000,2;"
+  },
+  "8001": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_HEAD_LOW",
+      "EQP_HEAD_TOP",
+      "EQP_HEAD_MID"
+    ],
+    "slots": 0,
+    "aegis_name": "Cave_Viper_Card",
+    "script": "bonus2 bAddAtkEle,Ele_Poison,10;"
+  },
+  "8089": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "slots": 0,
+    "aegis_name": "TWINORC_Card",
+    "script": "bonus bBaseAtk,10; if(getrefine()<6) { bonus2 bAddEle,Ele_Poison,15; bonus2 bIgnoreDefEle,Ele_Poison,4; } else { bonus2 bAddEle,Ele_Poison,20; bonus2 bIgnoreDefEle,Ele_Poison,8; }"
+  },
+  "8090": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_HEAD_LOW",
+      "EQP_HEAD_TOP",
+      "EQP_HEAD_MID"
+    ],
+    "slots": 0,
+    "aegis_name": "INDIGNANT_SOUL_Card",
+    "script": "bonus bVit,1; bonus2 bSkillAtk,MG_SOULSTRIKE,20; bonus2 bSkillAtk,MG_NAPALMBEAT,20; bonus2 bDelayrate,MG_SOULSTRIKE,-10; bonus2 bDelayrate,MG_NAPALMBEAT,-10;"
+  },
+  "8091": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_SHOES"
+    ],
+    "slots": 0,
+    "aegis_name": "Roper_Card",
+    "script": "bonus bMaxSP,25; bonus2 bMagicAddRace,RC_Plant,10; bonus2 bSubRace,RC_Plant,-10;"
+  },
+  "8092": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_SHIELD"
+    ],
+    "slots": 0,
+    "aegis_name": "Ghost_Shroom_Card",
+    "script": "bonus bFlee,10; bonus2 bSubEle,Ele_Ghost,20;"
+  },
+  "8093": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_ACC"
+    ],
+    "slots": 0,
+    "aegis_name": "Miasmus_Card",
+    "script": "bonus2 bResEff,Eff_Poison,10000; skill AS_ENCHANTPOISON,1;"
+  },
+  "8094": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_HEAD_LOW",
+      "EQP_HEAD_TOP",
+      "EQP_HEAD_MID"
+    ],
+    "slots": 0,
+    "aegis_name": "Frigid_Lich_Card",
+    "script": "bonus bAgi,1; bonus2 bResEff,SC_PS_HYPOTHERMIA,10000; bonus2 bResEff,SC_CHILLED,10000; bonus2 bSubEle,Ele_Water,15;"
+  },
+  "8095": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_ARMOR"
+    ],
+    "slots": 0,
+    "aegis_name": "Logi_Card",
+    "script": "bonus bMaxHPrate,5; bonus bMaxSPrate,5; bonus bDefEle,Ele_Dark; bonus2 bAddEffWhenHit,Eff_Curse,200;"
+  },
+  "8211": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_ACC"
+    ],
+    "slots": 0,
+    "aegis_name": "Protoring_Card",
+    "script": "bonus bVit,3;"
+  },
+  "8212": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_GARMENT"
+    ],
+    "slots": 0,
+    "aegis_name": "Doughring_Card",
+    "script": "bonus bFlee,7;"
+  },
+  "8213": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "slots": 0,
+    "aegis_name": "Jelring_Card",
+    "script": ""
+  },
+  "8214": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_ACC"
+    ],
+    "slots": 0,
+    "aegis_name": "Abomring_Card",
+    "script": ""
+  },
+  "8216": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_SHOES"
+    ],
+    "slots": 0,
+    "aegis_name": "Spectring_Card",
+    "script": "bonus bAgi,2; if(getrefine()>=8) { bonus bMaxHPrate,10; bonus bMaxSPrate,10; }"
+  },
+  "8217": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_ACC"
+    ],
+    "slots": 0,
+    "aegis_name": "Conductring_Card",
+    "script": "bonus2 bCastrate,MG_LIGHTNINGBOLT,-15; bonus2 bSkillAtk,MG_LIGHTNINGBOLT,15;"
+  },
+  "8218": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_SHOES"
+    ],
+    "slots": 0,
+    "aegis_name": "Corruptor_Card",
+    "script": "bonus bMaxSPrate,-50; bonus4 bAutoSpell,PS_CORRUPTINGDRAIN,1,40,ATF_WEAPON|ATF_SHORT|ATF_TARGET; bonus4 bAutoSpell,PS_CORRUPTINGDRAIN,1,20,ATF_WEAPON|ATF_LONG|ATF_TARGET;"
+  },
+  "8219": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_ACC"
+    ],
+    "slots": 0,
+    "aegis_name": "King_Poring_Card",
+    "script": "skill BS_GREED,1;"
+  },
+  "8233": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_ACC"
+    ],
+    "slots": 0,
+    "aegis_name": "Tomb_Crawler_Card",
+    "script": "skill PS_TRIAGE,1;"
+  },
+  "8235": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_SHOES"
+    ],
+    "slots": 0,
+    "aegis_name": "Kalec_Card",
+    "script": "bonus bInt,2; if(getrefine()>=9) { bonus bMaxHPrate,10; bonus bMaxSPrate,10; }"
+  },
+  "8236": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_SHOES"
+    ],
+    "slots": 0,
+    "aegis_name": "Yser_Card",
+    "script": "bonus2 bSkillAtk,RG_RAID,10; bonus2 bSkillAtk,RG_BACKSTAP,10; bonus bHit,5;"
+  },
+  "8237": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_ACC"
+    ],
+    "slots": 0,
+    "aegis_name": "FLAME_BEETLE_Card",
+    "script": ""
+  },
+  "8238": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "slots": 0,
+    "aegis_name": "Bonechewer_Card",
+    "script": "autobonus \"{ bonus bCritical,5; bonus bCritAtkRate,50; }\",50,10000,BF_WEAPON|BF_NORMAL;"
+  },
+  "8239": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_ACC"
+    ],
+    "slots": 0,
+    "aegis_name": "Shade_of_Payon_Card",
+    "script": "bonus2 bSkillAtk,MG_SOULSTRIKE,15; bonus2 bCastrate,MG_SOULSTRIKE,-15;"
+  },
+  "8240": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_SHIELD"
+    ],
+    "slots": 0,
+    "aegis_name": "Puck_Card",
+    "script": "bonus2 bSubRace,RC_Brute,25;"
+  },
+  "8241": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "slots": 0,
+    "aegis_name": "Dory_Card",
+    "script": "bonus2 bSkillAtk,HT_FREEZINGTRAP,30; bonus2 bSkillAtk,HT_CLAYMORETRAP,15;"
+  },
+  "8242": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_ARMOR"
+    ],
+    "slots": 0,
+    "aegis_name": "Jabberwock_Card",
+    "script": "bonus bHPrecovRate,-100; bonus bSPrecovRate,-100; bonus bHPGainValue,20; bonus bSPGainValue,3;"
+  },
+  "8243": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "slots": 0,
+    "aegis_name": "Wolpertinger_Card",
+    "script": "bonus2 bSkillAtk,HT_BLASTMINE,15; bonus2 bSkillAtk,HT_LANDMINE,15;"
+  },
+  "8244": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_HEAD_LOW",
+      "EQP_HEAD_TOP",
+      "EQP_HEAD_MID"
+    ],
+    "slots": 0,
+    "aegis_name": "MOON_RABBIT_Card",
+    "script": ""
+  },
+  "8245": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_GARMENT"
+    ],
+    "slots": 0,
+    "aegis_name": "KODAMA_Card",
+    "script": ""
+  },
+  "8246": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_HEAD_LOW",
+      "EQP_HEAD_TOP",
+      "EQP_HEAD_MID"
+    ],
+    "slots": 0,
+    "aegis_name": "Gyokuto_Card",
+    "script": "bonus2 bCastrate,PR_MAGNUS,-20;"
+  },
+  "8247": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_ACC"
+    ],
+    "slots": 0,
+    "aegis_name": "ONIGIRING_Card",
+    "script": ""
+  },
+  "8248": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_ACC"
+    ],
+    "slots": 0,
+    "aegis_name": "LADY_HUO_Card",
+    "script": "bonus bInt,1;"
+  },
+  "8341": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "weapon_type": "Knife",
+    "slots": 0,
+    "aegis_name": "Frostfire_Dagger",
+    "job": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12,
+      14,
+      16,
+      17,
+      18,
+      19,
+      20,
+      4008,
+      4010,
+      4011,
+      4012,
+      4013,
+      4015,
+      4017,
+      4018,
+      4019,
+      4020,
+      4021
+    ],
+    "atk": 118,
+    "weapon_level": 4,
+    "equip_level": 30,
+    "refineable": false,
+    "script": "skill \"MG_COLDBOLT\",3; skill \"MG_FIREBOLT\",3; bonus2 bAddEle,Ele_Fire,25; bonus2 bAddEle,Ele_Water,25; bonus bStr,1; bonus bAgi,2;"
+  },
+  "8342": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "weapon_type": "1HSword",
+    "slots": 0,
+    "aegis_name": "Frostfire_Sword",
+    "job": [
+      0,
+      1,
+      5,
+      6,
+      7,
+      10,
+      12,
+      14,
+      17,
+      18,
+      4008,
+      4011,
+      4013,
+      4015,
+      4018,
+      4019
+    ],
+    "atk": 138,
+    "weapon_level": 4,
+    "equip_level": 30,
+    "refineable": false,
+    "script": "skill \"MG_COLDBOLT\",3; skill \"MG_FIREBOLT\",3; bonus2 bAddEle,Ele_Fire,25; bonus2 bAddEle,Ele_Water,25; bonus bStr,2; bonus bDex,1;"
+  },
+  "8343": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_ARMS"
+    ],
+    "weapon_type": "2HSword",
+    "slots": 0,
+    "aegis_name": "Frostfire_Claymore",
+    "job": [
+      1,
+      7,
+      14,
+      4008,
+      4015
+    ],
+    "atk": 189,
+    "weapon_level": 4,
+    "equip_level": 30,
+    "refineable": false,
+    "script": "skill \"MG_COLDBOLT\",3; skill \"MG_FIREBOLT\",3; bonus2 bAddEle,Ele_Fire,25; bonus2 bAddEle,Ele_Water,25; bonus bStr,2; bonus bAgi,1;"
+  },
+  "8344": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_ARMS"
+    ],
+    "weapon_type": "Staff",
+    "slots": 0,
+    "aegis_name": "Frostfire_Staff",
+    "job": [
+      0,
+      2,
+      4,
+      8,
+      9,
+      15,
+      16,
+      4009,
+      4010,
+      4016,
+      4017,
+      4049
+    ],
+    "atk": 135,
+    "weapon_level": 4,
+    "equip_level": 30,
+    "refineable": false,
+    "script": "bonus2 bAddEle,Ele_Fire,25; bonus2 bAddEle,Ele_Water,25; bonus2 bCastRate,MG_COLDBOLT,-15; bonus2 bCastRate,MG_FIREBOLT,-15; bonus2 bCastRate,AL_INCAGI,-15; bonus2 bCastRate,AL_DECAGI,-15; bonus bInt,2; bonus bMatkRate,20;"
+  },
+  "8345": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_ARMS"
+    ],
+    "weapon_type": "2HAxe",
+    "slots": 0,
+    "aegis_name": "Frostfire_Axe",
+    "job": [
+      1,
+      5,
+      7,
+      10,
+      14,
+      18,
+      4008,
+      4011,
+      4015,
+      4019
+    ],
+    "atk": 193,
+    "weapon_level": 4,
+    "equip_level": 30,
+    "refineable": false,
+    "script": "skill \"MG_COLDBOLT\",3; skill \"MG_FIREBOLT\",3; bonus2 bAddEle,Ele_Fire,25; bonus2 bAddEle,Ele_Water,25; bonus bStr,1; bonus bAgi,2;"
+  },
+  "8346": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "weapon_type": "Mace",
+    "slots": 0,
+    "aegis_name": "Frostfire_Mace",
+    "job": [
+      0,
+      1,
+      4,
+      5,
+      7,
+      8,
+      10,
+      14,
+      15,
+      18,
+      4008,
+      4009,
+      4011,
+      4015,
+      4016,
+      4019
+    ],
+    "atk": 148,
+    "weapon_level": 4,
+    "equip_level": 30,
+    "refineable": false,
+    "script": "skill \"MG_COLDBOLT\",3; skill \"MG_FIREBOLT\",3; bonus2 bAddEle,Ele_Fire,25; bonus2 bAddEle,Ele_Water,25; bonus bAgi,1; bonus bDex,2;"
+  },
+  "8347": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "weapon_type": "1HSpear",
+    "slots": 0,
+    "aegis_name": "Frostfire_Spear",
+    "job": [
+      1,
+      7,
+      14,
+      4008,
+      4015
+    ],
+    "atk": 95,
+    "weapon_level": 4,
+    "equip_level": 30,
+    "refineable": false,
+    "script": "skill \"MG_COLDBOLT\",3; skill \"MG_FIREBOLT\",3; bonus2 bAddEle,Ele_Fire,25; bonus2 bAddEle,Ele_Water,25; bonus bStr,2; bonus bVit,1;"
+  },
+  "8348": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "weapon_type": "Knuckle",
+    "slots": 0,
+    "aegis_name": "Frostfire_Fist",
+    "job": [
+      15,
+      4016
+    ],
+    "atk": 122,
+    "weapon_level": 4,
+    "equip_level": 30,
+    "refineable": false,
+    "script": "skill \"MG_COLDBOLT\",3; skill \"MG_FIREBOLT\",3; bonus2 bAddEle,Ele_Fire,25; bonus2 bAddEle,Ele_Water,25; bonus bInt,1; bonus bAgi,2;"
+  },
+  "8349": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_ARMS"
+    ],
+    "weapon_type": "Katar",
+    "slots": 0,
+    "aegis_name": "Frostfire_Katar",
+    "job": [
+      12,
+      4013
+    ],
+    "atk": 171,
+    "weapon_level": 4,
+    "equip_level": 30,
+    "refineable": false,
+    "script": "skill \"MG_COLDBOLT\",3; skill \"MG_FIREBOLT\",3; bonus2 bAddEle,Ele_Fire,25; bonus2 bAddEle,Ele_Water,25; bonus bAgi,2; bonus bCritical,5;"
+  },
+  "8350": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "weapon_type": "Book",
+    "slots": 0,
+    "aegis_name": "Frostfire_Tome",
+    "job": [
+      8,
+      16,
+      4009,
+      4017
+    ],
+    "atk": 148,
+    "weapon_level": 4,
+    "equip_level": 30,
+    "refineable": false,
+    "script": "skill \"MG_COLDBOLT\",10; skill \"MG_FIREBOLT\",10; bonus2 bAddEle,Ele_Fire,25; bonus2 bAddEle,Ele_Water,25; bonus bDex,2; bonus bInt,1; bonus bMatkRate,20;"
+  },
+  "8351": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_ARMS"
+    ],
+    "weapon_type": "Bow",
+    "slots": 0,
+    "aegis_name": "Frostfire_Bow",
+    "job": [
+      3,
+      6,
+      11,
+      17,
+      19,
+      20,
+      4012,
+      4018,
+      4020,
+      4021
+    ],
+    "atk": 115,
+    "weapon_level": 4,
+    "equip_level": 30,
+    "refineable": false,
+    "script": "skill \"MG_COLDBOLT\",3; skill \"MG_FIREBOLT\",3; bonus2 bAddEle,Ele_Fire,25; bonus2 bAddEle,Ele_Water,25; bonus bDex,2; bonus bLuk,2;"
+  },
+  "8352": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "weapon_type": "Whip",
+    "slots": 0,
+    "aegis_name": "Frostfire_Whip",
+    "job": [
+      20,
+      4021
+    ],
+    "atk": 151,
+    "weapon_level": 4,
+    "equip_level": 30,
+    "refineable": false,
+    "script": "skill \"MG_COLDBOLT\",3; skill \"MG_FIREBOLT\",3; bonus2 bAddEle,Ele_Fire,25; bonus2 bAddEle,Ele_Water,25; bonus bDex,1; bonus bInt,2;"
+  },
+  "8353": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "weapon_type": "MusicalInstrument",
+    "slots": 0,
+    "aegis_name": "Frostfire_Violin",
+    "job": [
+      19,
+      4020
+    ],
+    "atk": 151,
+    "weapon_level": 4,
+    "equip_level": 30,
+    "refineable": false,
+    "script": "skill \"MG_COLDBOLT\",3; skill \"MG_FIREBOLT\",3; bonus2 bAddEle,Ele_Fire,25; bonus2 bAddEle,Ele_Water,25; bonus bDex,1; bonus bInt,2;"
+  },
+  "8394": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_ARMS"
+    ],
+    "weapon_type": "Fuuma",
+    "slots": 0,
+    "aegis_name": "Frostfire_Huuma_Shuriken",
+    "job": [
+      25
+    ],
+    "atk": 115,
+    "weapon_level": 4,
+    "equip_level": 30,
+    "refineable": false,
+    "script": "skill \"MG_COLDBOLT\",3; skill \"MG_FIREBOLT\",3; bonus2 bAddEle,Ele_Fire,25; bonus2 bAddEle,Ele_Water,25; bonus bDex,1; bonus bStr,2;"
+  },
+  "90000": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_ARMOR"
+    ],
+    "slots": 0,
+    "aegis_name": "MAGMAWHIP_Card",
+    "script": ""
+  },
+  "90001": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_HEAD_LOW",
+      "EQP_HEAD_TOP",
+      "EQP_HEAD_MID"
+    ],
+    "slots": 0,
+    "aegis_name": "SCOUT_Card",
+    "script": "bonus bStr,1; bonus2 bCastrate,MO_THROWSPIRIT,-10;"
+  },
+  "90002": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_ARMOR"
+    ],
+    "slots": 0,
+    "aegis_name": "Rekenber_Soldier_Card",
+    "script": "bonus bBaseAtk,15;"
+  },
+  "90003": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_GARMENT"
+    ],
+    "slots": 0,
+    "aegis_name": "WELDER_Card",
+    "script": "if(readparam(bAgi)<=80) { bonus bFlee,20; } if(readparam(bInt)<=80) { bonus bMatkRate,10; } if(readparam(bDex)<=80) { bonus bCastrate,-10; }"
+  },
+  "90004": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_SHIELD"
+    ],
+    "slots": 0,
+    "aegis_name": "CORE_Card",
+    "script": "bonus2 bSubRace,RC_Formless,20;"
+  },
+  "90005": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "slots": 0,
+    "aegis_name": "DRILL_Card",
+    "script": "bonus2 bSkillSpCost,KN_PIERCE,2; bonus2 bSkillAtk,KN_PIERCE,25; if(getequipweaponlv(4)>=3){ bonus2 bSkillAtk,KN_PIERCE,15; }"
+  },
+  "90006": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_SHOES"
+    ],
+    "slots": 0,
+    "aegis_name": "LIVING_MAGMA_Card",
+    "script": "bonus bInt,1; bonus2 bMagicAddEle,Ele_Fire,10;"
+  },
+  "90007": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_SHOES"
+    ],
+    "slots": 0,
+    "aegis_name": "FUEL_Card",
+    "script": "bonus bFlee,5; bonus2 bSkillAtk,AM_DEMONSTRATION,30; bonus2 bSkillAtk,AM_ACIDTERROR,30;"
+  },
+  "90008": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_ACC"
+    ],
+    "slots": 0,
+    "aegis_name": "Rekenber_Guard_Card",
+    "script": "skill RG_BACKSTAB,1;"
+  },
+  "90009": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_HEAD_LOW",
+      "EQP_HEAD_TOP",
+      "EQP_HEAD_MID"
+    ],
+    "slots": 0,
+    "aegis_name": "Rekenber_Mercenary_Card",
+    "script": "bonus3 bAutoSpell,SM_BASH,1+9*(getskilllv(SM_BASH)==10),50;"
+  },
+  "90010": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_HEAD_LOW",
+      "EQP_HEAD_TOP",
+      "EQP_HEAD_MID"
+    ],
+    "slots": 0,
+    "aegis_name": "Magma_Familiar_Card",
+    "script": "bonus bDex,1;"
+  },
+  "90011": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_GARMENT"
+    ],
+    "slots": 0,
+    "aegis_name": "MAID_Card",
+    "script": "bonus bMaxHPrate,-25; bonus bMaxSPrate,-25; bonus bCastrate,-20;"
+  },
+  "90012": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_GARMENT"
+    ],
+    "slots": 0,
+    "aegis_name": "REKENBER_GENERAL_Card",
+    "script": "bonus2 bSubEle,Ele_Neutral,20; bonus2 bSubEle,Ele_Neutral,getrefine(); bonus bMdef,-(getrefine());"
+  },
+  "90013": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_HEAD_LOW",
+      "EQP_HEAD_TOP",
+      "EQP_HEAD_MID"
+    ],
+    "slots": 0,
+    "aegis_name": "IGNIS_Card",
+    "script": "skill PS_NPC_FIREWALK,4;"
+  },
+  "90014": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_SHOES"
+    ],
+    "slots": 0,
+    "aegis_name": "PILL_BUG_Card",
+    "script": "bonus2 bSkillAtk,MC_CARTREVOLUTION,8;"
+  },
+  "90015": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_SHOES"
+    ],
+    "slots": 0,
+    "aegis_name": "GREAT_SNAKE_Card",
+    "script": "bonus bAgi,1;"
+  },
+  "90016": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_SHIELD"
+    ],
+    "slots": 0,
+    "aegis_name": "ELITE_PUNK_Card",
+    "script": "bonus bMaxHP,300; bonus bFlee2,3;"
+  },
+  "90017": {
+    "type": "IT_CARD",
+    "loc": [
+      "EQP_HEAD_LOW",
+      "EQP_HEAD_TOP",
+      "EQP_HEAD_MID"
+    ],
+    "slots": 0,
+    "aegis_name": "SPURUS_Card",
+    "script": "bonus bInt,-6;"
+  },
+  "8132": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "weapon_type": "Book",
+    "slots": 3,
+    "aegis_name": "Photo_Album",
+    "job": [
+      8,
+      16,
+      4009,
+      4017
+    ],
+    "atk": 64,
+    "weapon_level": 1,
+    "equip_level": 14,
+    "refineable": true,
+    "script": "bonus bMatkRate,15;"
+  },
+  "8133": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "weapon_type": "Book",
+    "slots": 4,
+    "aegis_name": "Photo_Album_",
+    "job": [
+      8,
+      16,
+      4009,
+      4017
+    ],
+    "atk": 64,
+    "weapon_level": 1,
+    "equip_level": 14,
+    "refineable": true,
+    "script": "bonus bMatkRate,15;"
+  },
+  "8165": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "weapon_type": "Knife",
+    "slots": 0,
+    "aegis_name": "Poring_Dagger",
+    "job": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12,
+      14,
+      16,
+      17,
+      18,
+      19,
+      20,
+      23,
+      25,
+      4008,
+      4010,
+      4011,
+      4012,
+      4013,
+      4015,
+      4017,
+      4018,
+      4019,
+      4020,
+      4021,
+      4049
+    ],
+    "atk": 115,
+    "weapon_level": 4,
+    "equip_level": 45,
+    "refineable": true,
+    "script": "bonus2 bAddRace,RC_Formless,20; if(BaseJob==Job_Novice||BaseJob==Job_SuperNovice) { bonus bAspdRate,8; }"
+  },
+  "8271": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "weapon_type": "Katar",
+    "slots": 0,
+    "element": 6,
+    "aegis_name": "Astra_Of_The_Empress",
+    "job": [
+      12,
+      4013
+    ],
+    "atk": 132,
+    "weapon_level": 3,
+    "equip_level": 50,
+    "refineable": true,
+    "script": "bonus bStr,1;"
+  },
+  "8282": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "weapon_type": "Bow",
+    "slots": 1,
+    "aegis_name": "Divinity_Bow",
+    "job": [
+      3,
+      6,
+      11,
+      17,
+      19,
+      20,
+      4012,
+      4018,
+      4020,
+      4021
+    ],
+    "atk": 110,
+    "weapon_level": 3,
+    "equip_level": 45,
+    "refineable": true,
+    "script": "bonus2 bAddRace,RC_Demon,20;"
+  },
+  "8300": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "weapon_type": "Staff",
+    "slots": 0,
+    "aegis_name": "Staff_Of_The_Priestess",
+    "job": [
+      2,
+      8,
+      9,
+      16,
+      4009,
+      4010,
+      4017
+    ],
+    "atk": 85,
+    "weapon_level": 3,
+    "equip_level": 75,
+    "refineable": true,
+    "script": "skill \"AL_HEAL\",3; bonus bInt,1; bonus bMatkRate,15; bonus2 bSkillHeal,\"AL_HEAL\",5;"
+  },
+  "8301": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "weapon_type": "1HSpear",
+    "slots": 0,
+    "aegis_name": "Protectors_Spear",
+    "job": [
+      1,
+      7,
+      14,
+      4008,
+      4015
+    ],
+    "atk": 114,
+    "weapon_level": 3,
+    "equip_level": 20,
+    "refineable": true,
+    "script": ""
+  },
+  "8393": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "weapon_type": "Knife",
+    "slots": 0,
+    "aegis_name": "Frozen_Pick",
+    "job": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12,
+      14,
+      16,
+      17,
+      18,
+      19,
+      20,
+      25,
+      4008,
+      4010,
+      4011,
+      4012,
+      4013,
+      4015,
+      4017,
+      4018,
+      4019,
+      4020,
+      4021,
+      4049
+    ],
+    "atk": 52,
+    "weapon_level": 4,
+    "equip_level": 36,
+    "refineable": true,
+    "script": "bonus bFlee,-20; bonus bDef,-10; if(getrefine()>=8) { bonus bDefRatioAtkRace,RC_All; }"
+  },
+  "8395": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "weapon_type": "Knife",
+    "slots": 2,
+    "aegis_name": "Setting_Dirk",
+    "job": [
+      11,
+      17,
+      4012,
+      4018
+    ],
+    "atk": 65,
+    "weapon_level": 3,
+    "equip_level": 12,
+    "refineable": true,
+    "script": "bonus2 bSkillAtk,\"HT_LANDMINE\",20; bonus2 bSkillAtk,\"HT_FREEZINGTRAP\",20; bonus2 bSkillAtk,\"HT_BLASTMINE\",20; bonus2 bSkillAtk,\"HT_CLAYMORETRAP\",20;"
+  },
+  "81000": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "weapon_type": "Whip",
+    "slots": 1,
+    "aegis_name": "Magma_Whip",
+    "job": [
+      20,
+      4021
+    ],
+    "atk": 150,
+    "weapon_level": 4,
+    "equip_level": 65,
+    "refineable": true,
+    "script": "bonus bDex,4; bonus2 bSkillAtk,\"DC_THROWARROW\",15; bonus2 bSkillAtk,\"CG_ARROWVULCAN\",10;"
+  },
+  "81001": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "weapon_type": "MusicalInstrument",
+    "slots": 1,
+    "aegis_name": "Magma_Guitar",
+    "job": [
+      19,
+      4020
+    ],
+    "atk": 150,
+    "weapon_level": 4,
+    "equip_level": 65,
+    "refineable": true,
+    "script": "bonus bDex,4; bonus2 bSkillAtk,\"BA_MUSICALSTRIKE\",15; bonus2 bSkillAtk,\"CG_ARROWVULCAN\",10;"
+  },
+  "81004": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "weapon_type": "Book",
+    "slots": 0,
+    "element": 3,
+    "aegis_name": "Brimstone_Spellbook",
+    "job": [
+      8,
+      16,
+      4009,
+      4017,
+      4047
+    ],
+    "atk": 90,
+    "weapon_level": 3,
+    "equip_level": 50,
+    "refineable": true,
+    "script": "bonus3 bAutoSpell,\"MG_FIREBOLT\",3,70; bonus bMatkRate,15;"
+  },
+  "81005": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "weapon_type": "Staff",
+    "slots": 0,
+    "element": 3,
+    "aegis_name": "Staff_Of_The_Scholar",
+    "job": [
+      16,
+      4017
+    ],
+    "atk": 80,
+    "weapon_level": 3,
+    "equip_level": 50,
+    "refineable": true,
+    "script": "bonus bInt,4; bonus bMatkRate,15; bonus bIgnoreMdefRate,15;"
+  },
+  "81010": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "weapon_type": "Staff",
+    "slots": 1,
+    "element": 4,
+    "aegis_name": "Frozen_Thunder",
+    "job": [
+      9,
+      4010
+    ],
+    "atk": 90,
+    "weapon_level": 4,
+    "equip_level": 80,
+    "refineable": true,
+    "script": "bonus bInt,2; bonus bMatkRate,15; bonus2 bSkillAtk,\"WZ_VERMILION\",20; bonus2 bSkillAtk,\"WZ_FROSTNOVA\",20; bonus2 bCastRate,\"WZ_VERMILION\",-20; bonus2 bCastRate,\"WZ_FROSTNOVA\",-20;"
+  },
+  "91019": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "weapon_type": "Rifle",
+    "slots": 3,
+    "aegis_name": "Branch",
+    "job": [
+      24
+    ],
+    "atk": 70,
+    "weapon_level": 1,
+    "equip_level": 1,
+    "refineable": true,
+    "script": "bonus bHit,10; bonus bCritical,10;"
+  },
+  "91134": {
+    "type": "IT_WEAPON",
+    "loc": [
+      "EQP_WEAPON"
+    ],
+    "weapon_type": "Shotgun",
+    "slots": 2,
+    "aegis_name": "Rolling_Stone",
+    "job": [
+      24
+    ],
+    "atk": 150,
+    "weapon_level": 2,
+    "equip_level": 20,
+    "refineable": true,
+    "script": ""
+  },
+  "8065": {
+    "type": "IT_ARMOR",
+    "loc": [
+      "EQP_HEAD_TOP"
+    ],
+    "def": 2,
+    "slots": 0,
+    "aegis_name": "Momoe_Hairband",
+    "job": [],
+    "equip_level": 0,
+    "refineable": false,
+    "script": "bonus bAgi,1; bonus bFlee,5;"
+  },
+  "8122": {
+    "type": "IT_ARMOR",
+    "loc": [
+      "EQP_HEAD_TOP"
+    ],
+    "def": 1,
+    "slots": 0,
+    "aegis_name": "Guardian_Skull",
+    "job": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 19, 20, 23, 24, 25, 4008, 4009, 4010, 4011, 4012, 4013, 4015, 4016, 4017, 4018, 4019, 4020, 4021, 4046, 4047, 4049],
+    "equip_level": 80,
+    "refineable": true,
+    "script": "bonus bStr,1; bonus bDex,1; bonus bDef,getrefine()/2;"
+  },
+  "8125": {
+    "type": "IT_ARMOR",
+    "loc": [
+      "EQP_GARMENT"
+    ],
+    "def": 0,
+    "slots": 1,
+    "aegis_name": "Ghostly_Muffler",
+    "job": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 19, 20, 23, 24, 25, 4008, 4009, 4010, 4011, 4012, 4013, 4015, 4016, 4017, 4018, 4019, 4020, 4021, 4046, 4047, 4049],
+    "equip_level": 65,
+    "refineable": true,
+    "script": "bonus bMdef,2; bonus bMaxHP,100;"
+  },
+  "8130": {
+    "type": "IT_ARMOR",
+    "loc": ["EQP_ACC"],
+    "def": 0,
+    "slots": 1,
+    "aegis_name": "Pink_Clip",
+    "job": [],
+    "equip_level": 45,
+    "refineable": true,
+    "script": "bonus bMaxHP,30; bonus bMaxSP,20;"
+  },
+  "8134": {
+    "type": "IT_ARMOR",
+    "loc": [
+      "EQP_ARMOR"
+    ],
+    "def": 5,
+    "slots": 1,
+    "aegis_name": "Guardian_Robe",
+    "job": [8, 9, 16, 18, 25, 4009, 4010, 4017, 4019, 4049],
+    "equip_level": 80,
+    "refineable": true,
+    "script": "bonus bInt,1; bonus bMdef,3;"
+  },
+  "8135": {
+    "type": "IT_ARMOR",
+    "loc": [
+      "EQP_SHIELD"
+    ],
+    "def": 4,
+    "slots": 1,
+    "aegis_name": "Carapace_Of_The_Damned",
+    "job": [1, 4, 5, 6, 7, 8, 10, 12, 14, 15, 17, 18, 19, 20, 4008, 4009, 4011, 4013, 4015, 4016, 4018, 4019, 4020, 4021],
+    "equip_level": 80,
+    "refineable": true,
+    "script": "bonus bMdef,2; bonus2 bSubEle,Ele_Dark,5;"
+  },
+  "8140": {
+    "type": "IT_ARMOR",
+    "loc": [
+      "EQP_HEAD_TOP"
+    ],
+    "def": 3,
+    "slots": 0,
+    "aegis_name": "Ghost_Shroom_Hat",
+    "job": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 19, 20, 23, 24, 25, 4008, 4009, 4010, 4011, 4012, 4013, 4015, 4016, 4017, 4018, 4019, 4020, 4021, 4046, 4047, 4049],
+    "equip_level": 20,
+    "refineable": true,
+    "script": "bonus2 bSubEle,Ele_Water,5;"
+  },
+  "8178": {
+    "type": "IT_ARMOR",
+    "loc": ["EQP_ACC"],
+    "def": 0,
+    "slots": 0,
+    "aegis_name": "Poring_Memento",
+    "job": [],
+    "equip_level": 20,
+    "refineable": true,
+    "script": "bonus bMaxHP,100; bonus bMdef,1; bonus bLuk,1;"
+  },
+  "8273": {
+    "type": "IT_ARMOR",
+    "loc": [
+      "EQP_HEAD_TOP"
+    ],
+    "def": 1,
+    "slots": 0,
+    "aegis_name": "Bloodstained_Headband",
+    "job": [],
+    "equip_level": 0,
+    "refineable": true,
+    "script": "bonus bStr,1; bonus bVit,1;"
+  },
+  "8274": {
+    "type": "IT_ARMOR",
+    "loc": [
+      "EQP_HEAD_TOP"
+    ],
+    "def": 4,
+    "slots": 0,
+    "aegis_name": "Magic_Sprite_Hat",
+    "job": [],
+    "equip_level": 40,
+    "refineable": true,
+    "script": "bonus bInt,1; bonus bAgi,1; bonus bSPrecovRate,5;"
+  },
+  "8275": {
+    "type": "IT_ARMOR",
+    "loc": [
+      "EQP_HEAD_LOW"
+    ],
+    "def": 0,
+    "slots": 0,
+    "aegis_name": "Scouting_Scarf",
+    "job": [],
+    "equip_level": 40,
+    "refineable": false,
+    "script": "bonus bFlee,3;"
+  },
+  "8279": {
+    "type": "IT_ARMOR",
+    "loc": ["EQP_ACC"],
+    "def": 0,
+    "slots": 0,
+    "aegis_name": "Ring_Of_The_Claw",
+    "job": [],
+    "equip_level": 40,
+    "refineable": false,
+    "script": "bonus bStr,2; bonus bDef,-1; bonus bCritical,2; bonus bCritAtkRate,10;"
+  },
+  "8281": {
+    "type": "IT_ARMOR",
+    "loc": ["EQP_HEAD_MID"],
+    "def": 0,
+    "slots": 0,
+    "aegis_name": "Diving_Goggles",
+    "job": [],
+    "refineable": false,
+    "script": "bonus2 bSubRace,RC_Fish,3;"
+  },
+  "8291": {
+    "type": "IT_ARMOR",
+    "loc": ["EQP_GARMENT"],
+    "def": 3,
+    "slots": 0,
+    "aegis_name": "Necrofantasy_Muffler",
+    "job": [],
+    "refineable": true,
+    "script": "bonus bFlee,10;"
+  },
+  "8292": {
+    "type": "IT_ARMOR",
+    "loc": ["EQP_SHOES"],
+    "def": 3,
+    "slots": 0,
+    "aegis_name": "Necrofantasy_Shoes",
+    "job": [],
+    "refineable": true,
+    "script": "bonus bMaxHP,200;"
+  },
+  "8298": {
+    "type": "IT_ARMOR",
+    "loc": ["EQP_ARMOR"],
+    "def": 5,
+    "slots": 1,
+    "aegis_name": "Sacred_Saints_Robe",
+    "job": [],
+    "equip_level": 55,
+    "refineable": true,
+    "script": "bonus bMdef,3; bonus bDex,1; bonus2 bSkillHeal,\"AL_HEAL\",5;"
+  },
+  "8305": {
+    "type": "IT_ARMOR",
+    "loc": ["EQP_HEAD_TOP"],
+    "def": 2,
+    "slots": 1,
+    "aegis_name": "Diadem_Of_The_High_Priestess",
+    "job": [],
+    "equip_level": 75,
+    "refineable": true,
+    "script": "bonus2 bSubEle,Ele_Holy,10; bonus bMdef,2;"
+  },
+  "81003": {
+    "type": "IT_ARMOR",
+    "loc": ["EQP_HEAD_LOW"],
+    "def": 1,
+    "slots": 0,
+    "aegis_name": "Aggayu_Mask",
+    "job": [1,2,3,4,5,6,7,8,9,10,11,12,14,15,16,17,18,19,20,23,24,25,4008,4009,4010,4011,4012,4013,4015,4016,4017,4018,4019,4020,4021,4046,4047,4049],
+    "equip_level": 40,
+    "refineable": false,
+    "script": "bonus2 bSubEle,Ele_Fire,3;"
+  },
+  "81006": {
+    "type": "IT_ARMOR",
+    "loc": ["EQP_SHOES"],
+    "def": 2,
+    "slots": 0,
+    "aegis_name": "Ruby_Pumps",
+    "job": [],
+    "refineable": true,
+    "script": "bonus bCritical,3;"
+  },
+  "81007": {
+    "type": "IT_ARMOR",
+    "loc": ["EQP_SHOES"],
+    "def": 0,
+    "slots": 1,
+    "aegis_name": "Fancy_Shoes",
+    "job": [1,2,3,4,5,6,7,8,9,10,11,12,14,15,16,17,18,19,20,23,24,25,4008,4009,4010,4011,4012,4013,4015,4016,4017,4018,4019,4020,4021,4046,4047,4049],
+    "refineable": true,
+    "script": "bonus bMdef,2; bonus bMaxHP,100;"
+  },
+  "81008": {
+    "type": "IT_ARMOR",
+    "loc": ["EQP_ARMOR"],
+    "def": 2,
+    "slots": 1,
+    "aegis_name": "Mercenary_Bodysuit",
+    "job": [],
+    "refineable": true,
+    "script": "bonus bAgi,1;"
+  },
+  "81009": {
+    "type": "IT_ARMOR",
+    "loc": ["EQP_ARMOR"],
+    "def": 7,
+    "slots": 1,
+    "aegis_name": "Heavy_Gunner_Armor",
+    "job": [1,5,7,10,14,18,24,4008,4011,4015,4019,4046,4047],
+    "equip_level": 80,
+    "refineable": true,
+    "script": "bonus bMdef,5; bonus bMaxHP,150; bonus2 bSubRace,RC_DemiHuman,2;"
+  },
+  "90071": {
+    "type": "IT_ARMOR",
+    "loc": ["EQP_SHIELD"],
+    "def": 2,
+    "slots": 1,
+    "aegis_name": "Stone_Discus",
+    "job": [14, 4015],
+    "refineable": true,
+    "script": "bonus2 bSkillAtk,\"CR_SHIELDBOOMERANG\",getrefine()*3; bonus2 bSkillAtk,\"CR_SHIELDCHARGE\",getrefine()*3;"
+  },
+  "91047": {
+    "type": "IT_ARMOR",
+    "loc": ["EQP_GARMENT"],
+    "def": 2,
+    "slots": 1,
+    "aegis_name": "Dragons_Hide",
+    "job": [1,2,3,4,5,6,7,8,9,10,11,12,14,15,16,17,18,19,20,23,24,25,4008,4009,4010,4011,4012,4013,4015,4016,4017,4018,4019,4020,4021,4046,4047,4049],
+    "refineable": true,
+    "script": "bonus2 bSubRace,RC_Dragon,5;"
+  },
+  "91120": {
+    "type": "IT_ARMOR",
+    "loc": ["EQP_HEAD_MID"],
+    "def": 1,
+    "slots": 0,
+    "aegis_name": "Gunner_Goggles",
+    "job": [24],
+    "equip_level": 55,
+    "refineable": false,
+    "script": ""
+  },
+  "13233": {
+    "type": "IT_AMMO",
+    "loc": ["EQP_AMMO"],
+    "atk": 30,
+    "slots": 0,
+    "aegis_name": "Armor_Piercing_Bullet",
+    "job": [],
+    "refineable": false,
+    "script": "bonus bCritical,10;"
+  },
+  "13234": {
+    "type": "IT_AMMO",
+    "loc": ["EQP_AMMO"],
+    "atk": 45,
+    "slots": 0,
+    "aegis_name": "Hollow_Point_Bullet",
+    "job": [],
+    "refineable": false,
+    "script": "bonus2 bAddRace,RC_DemiHuman,20;"
+  },
+  "13235": {
+    "type": "IT_AMMO",
+    "loc": ["EQP_AMMO"],
+    "atk": 45,
+    "slots": 0,
+    "aegis_name": "Heavy_Tipped_Bullet",
+    "job": [],
+    "refineable": false,
+    "script": "bonus2 bAddRace,RC_All,10;"
+  },
+  "13236": {
+    "type": "IT_AMMO",
+    "loc": ["EQP_AMMO"],
+    "atk": 10,
+    "slots": 0,
+    "aegis_name": "Frostfire_Bullet",
+    "job": [],
+    "refineable": false,
+    "script": "bonus2 bAddEle,Ele_Fire,15; bonus2 bAddEle,Ele_Water,15;"
+  },
+  "91121": {
+    "type": "IT_AMMO",
+    "loc": ["EQP_AMMO"],
+    "atk": 200,
+    "slots": 0,
+    "aegis_name": "Heavy_Explosive_Grenade",
+    "job": [],
+    "refineable": false,
+    "script": ""
+  },
+  "91122": {
+    "type": "IT_AMMO",
+    "loc": ["EQP_AMMO"],
+    "atk": 80,
+    "slots": 0,
+    "aegis_name": "Flashbang_Grenade",
+    "job": [],
+    "refineable": false,
+    "script": "bonus2 bAddEff,Eff_Blind,5000;"
+  },
+  "91123": {
+    "type": "IT_AMMO",
+    "loc": ["EQP_AMMO"],
+    "atk": 80,
+    "slots": 0,
+    "aegis_name": "Stun_Grenade",
+    "job": [],
+    "refineable": false,
+    "script": "bonus2 bAddEff,Eff_Stun,9000;"
+  },
+  "91124": {
+    "type": "IT_AMMO",
+    "loc": ["EQP_AMMO"],
+    "atk": 80,
+    "slots": 0,
+    "aegis_name": "Sticky_Grenade",
+    "job": [],
+    "refineable": false,
+    "script": "bonus2 bAddEff,SC_CHILLED,3500;"
+  },
+  "91125": {
+    "type": "IT_AMMO",
+    "loc": ["EQP_AMMO"],
+    "atk": 80,
+    "slots": 0,
+    "element": 8,
+    "aegis_name": "Ghosthunter_Grenade",
+    "job": [],
+    "refineable": false,
+    "script": ""
+  },
+  "91126": {
+    "type": "IT_AMMO",
+    "loc": ["EQP_AMMO"],
+    "atk": 45,
+    "slots": 0,
+    "aegis_name": "Plated_Bullet",
+    "job": [],
+    "refineable": false,
+    "script": "bonus2 bAddEle,Ele_Neutral,20;"
+  },
+  "91127": {
+    "type": "IT_AMMO",
+    "loc": ["EQP_AMMO"],
+    "atk": 10,
+    "slots": 0,
+    "aegis_name": "Thud_Grenade",
+    "job": [],
+    "refineable": false,
+    "script": ""
+  },
+  "91134": {
+    "type": "IT_WEAPON",
+    "weapon_type": "W_SHOTGUN",
+    "atk": 150,
+    "slots": 2,
+    "weapon_level": 2,
+    "aegis_name": "Rolling_Stone__",
+    "job": [24],
+    "equip_level": 20,
+    "refineable": true,
+    "script": ""
+  },
+  "91135": {
+    "type": "IT_ARMOR",
+    "loc": ["EQP_HEAD_LOW"],
+    "def": 0,
+    "slots": 0,
+    "aegis_name": "Aquatic_Shawl",
+    "job": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 19, 20, 23, 24, 25, 4008, 4009, 4010, 4011, 4012, 4013, 4015, 4016, 4017, 4018, 4019, 4020, 4021, 4046, 4047, 4049],
+    "equip_level": 40,
+    "refineable": false,
+    "script": "bonus2 bSubEle,Ele_Water,3;"
+  }
+}

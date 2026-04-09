@@ -1,0 +1,44 @@
+{
+  "comment": "Exact pre-renewal mastery bonuses from battle.c:battle_addmastery (weapon-type switch + KN_SPEARMASTERY conditionals). No renewal content. Each mastery can have 'default' and optional conditional keys (riding_peco, riding_dragon).",
+  "masteries": {
+    "SM_SWORD": {
+      "default": 4
+    },
+    "SM_TWOHANDSWORD": {
+      "default": 4
+    },
+    "KN_SPEARMASTERY": {
+      "default": 4,
+      "riding_peco": 5
+    },
+    "AM_AXEMASTERY": {
+      "default": 3
+    },
+    "PR_MACEMASTERY": {
+      "default": 3
+    },
+    "MO_IRONHAND": {
+      "default": 3
+    },
+    "BA_MUSICALLESSON": {
+      "default": 3
+    },
+    "DC_DANCINGLESSON": {
+      "default": 3
+    },
+    "SA_ADVANCEDBOOK": {
+      "default": 3
+    },
+    "AS_KATAR": {
+      "default": 3
+    },
+    "AL_DEMONBANE": {
+      "default": 0,
+      "note": "conditional mastery — handled in phase 1 of mastery_fix.py (_vanilla_secondary_bonus)"
+    },
+    "HT_BEASTBANE": {
+      "default": 0,
+      "note": "conditional mastery — handled in phase 1 of mastery_fix.py (_vanilla_secondary_bonus)"
+    }
+  }
+}

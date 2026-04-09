@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE local state
+.vs/
+.vscode/
+
+# User-generated runtime config (scale override, future prefs)
+settings.json
+
+# User save files — only ABB.json (default build) is tracked
+saves/*
+!saves/.gitkeep
+!saves/ABB.json
