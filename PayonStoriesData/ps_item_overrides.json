@@ -3614,6 +3614,9 @@
   },
   "13106": {
     "atk": 80,
+    "slots": 2,
+    "weapon_type": "Revolver",
+    "script": "bonus2 bSkillAtk,GS_RAPIDSHOWER,60;",
     "description": "A decorative, beautiful golden pistol that<br/>commands attention.<br/>10% chance to autocast Coin Flip at your max learned level for half cost while attacking<br/>+60% Increased damage on Rapid Shower<br/>Class:<font color='#6666CC'> Pistol</font><br/>Attack:<font color='#CC0000'> 80</font><br/>Weight:<font color='#009900'> 50</font><br/>Weapon Level:<font color='#009900'> 3</font><br/>Level Requirement:<font color='#009900'> 12</font><br/>Jobs:<font color='#6666CC'> Gunslinger</font>"
   },
   "13109": {

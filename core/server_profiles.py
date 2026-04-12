@@ -937,7 +937,6 @@ _PS_SKILL_MIN_PERIOD_MS: dict[str, int] = {
     "GS_TRIPLEACTION":  450,
     # Per-skill cooldowns (blockpc, not ACD — immune to Bragi/delayrate). Source: ps_skill_db.json.
     "AS_SPLASHER":      3000,
-    "GS_RAPIDSHOWER":   1000,
     "KN_CHARGEATK":     3000,
     "PS_RG_QUICKSTEP":  4000,
 }
