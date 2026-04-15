@@ -14,7 +14,7 @@ from functools import reduce
 
 from core.models.damage import DamageResult
 from core.models.calc_context import CalcContext
-from pmf.operations import _uniform_pmf, _scale_floor, _convolve, pmf_stats
+from pmf.operations import _uniform_pmf, _scale_floor, _convolve, pmf_stats, _add_flat
 from core.models.build import PlayerBuild
 from core.models.status import StatusData
 from core.models.skill import SkillInstance
@@ -148,9 +148,11 @@ class MagicPipeline:
                 and skill_name == "MG_SOULSTRIKE"
                 and build.skill_params.get("MG_SOULSTRIKE_mdef_ignore", True)):
             mdef_ignore_pct = 50
-        elif ("WZ_FIREPILLAR_MDEF_IGNORE" in profile.mechanic_flags
-              and skill_name == "WZ_FIREPILLAR"):
-            mdef_ignore_pct = 50
+        elif skill_name == "WZ_FIREPILLAR":
+            if "WZ_FIREPILLAR_MDEF_IGNORE" in profile.mechanic_flags:
+                mdef_ignore_pct = 50
+            else:
+                mdef_ignore_pct = 100  # battle.c:1561: NK_IGNORE_DEF zeroes hard mdef
 
         wave_fn = profile.magic_wave_ratios.get(skill_name)
         if wave_fn is not None:
@@ -179,8 +181,8 @@ class MagicPipeline:
                 # CardFix per-wave: calc_cardfix before damage_div_fix per battle_calc_magic_attack
                 w_pmf = CardFix.calculate_magic(target, "Ele_" + magic_ele_name, w_pmf, _wave_result,
                                                 gear_bonuses)
-                if hit_count > 1:
-                    w_pmf = _scale_floor(w_pmf, hit_count, 1)
+                if hit_count_raw > 1:
+                    w_pmf = _scale_floor(w_pmf, hit_count_raw, 1)
                 mn, mx, av = pmf_stats(w_pmf)
                 result.add_step(
                     name=f"Wave {wave_idx}/{wave_count} (ratio={ri}%)",
@@ -218,6 +220,21 @@ class MagicPipeline:
             pmf, hit_count_raw, wave_count = SkillRatio.calculate_magic(skill, pmf, build, target, result,
                                                                          profile=profile, ctx=ctx,
                                                                          gear_bonuses=gear_bonuses)
+
+            # Fire Pillar flat add — vanilla only (battle.c:4023: MATK_ADD(100+50*skill_lv)).
+            # Constant term in the factored formula (lv+2)×(50+MATK/5); not present in PS.
+            if skill_name == "WZ_FIREPILLAR" and skill_name not in profile.magic_ratios:
+                fp_flat = 100 + 50 * skill.level
+                pmf = _add_flat(pmf, fp_flat)
+                mn, mx, av = pmf_stats(pmf)
+                result.add_step(
+                    name="Fire Pillar Flat Add",
+                    value=av, min_value=mn, max_value=mx,
+                    multiplier=1.0,
+                    note=f"+{fp_flat} flat (constant term in (lv+2)×(50+MATK/5))",
+                    formula=f"dmg + {fp_flat}",
+                    hercules_ref="battle.c:4023: MATK_ADD(100+50*skill_lv)",
+                )
 
             # Defense Fix — per-hit.
             # Source: battle_calc_magic_attack: damage*(100-mdef)/100 - mdef2 (magic_defense_type=0)

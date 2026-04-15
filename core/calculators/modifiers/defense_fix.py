@@ -276,7 +276,7 @@ class DefenseFix:
 
         Formula: damage = damage * (100 - mdef) / 100 - mdef2
         ignore_mdef: sd->ignore_mdef[race] + ignore_mdef[boss/nonboss] reduces mdef%.
-        mdef_ignore_pct: additional % MDEF reduction (e.g. 50 for PS Soul Strike lv10 learned).
+        mdef_ignore_pct: % of hard MDEF ignored (e.g. 50 for PS Soul Strike/FirePillar, 100 for vanilla FirePillar).
         Source: battle.c:1549-1592 BF_MAGIC case (#else not RENEWAL, magic_defense_type=0).
         """
         mdef = max(0, min(100, target.mdef_))
@@ -300,11 +300,9 @@ class DefenseFix:
         else:
             note_ignore = ""
 
-        # PS Soul Strike lv10 learned: 50% MDEF reduction (skill parameter toggle).
-        # JSONL: "ignores 50% of the target's MDEF regardless of the current Soul Strike level".
         if mdef_ignore_pct > 0:
             mdef = max(0, mdef - mdef * mdef_ignore_pct // 100)
-            note_ignore += f" (PS Soul Strike lv10: −{mdef_ignore_pct}% MDEF → {mdef})"
+            note_ignore += f" (−{mdef_ignore_pct}% hard MDEF ignored → {mdef})"
 
         # battle.c:1585 #else not RENEWAL, magic_defense_type=0:
         # damage = damage * (100 - mdef) / 100 - mdef2

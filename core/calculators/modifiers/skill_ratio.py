@@ -487,11 +487,7 @@ class SkillRatio:
         if ps_flat_fn := profile.param_skill_flat_adds.get(skill_name):
             flat_add += ps_flat_fn(params, skill.level)
 
-        # SC_MAXIMIZEPOWER forces ratio = 100 (exact rule from battle_calc_skillratio)
         active = getattr(build, 'active_status_levels', {})
-        if "SC_MAXIMIZEPOWER" in active:
-            ratio = 100
-            ratio_src = "SC_MAXIMIZEPOWER override"
 
         # SC_OVERTHRUST / SC_OVERTHRUSTMAX add to skillratio (not flat ATK).
         # status.c: SC_OVERTHRUST val3 = 5*val1 (self-cast, pre-renewal)

@@ -436,10 +436,11 @@ _PS_BF_MAGIC_RATIOS: dict[str, Callable] = {
     # Vanilla ratio = 100% (unchanged). target.element==9 → Undead; target.race=="Demon" → Demon.
     # Source: ps_skill_db.json — "Non-undead/demon take 50% reduced damage".
     "PR_MAGNUS":      lambda lv, tgt, ctx=None: 100 if (tgt and (tgt.element == 9 or tgt.race == "Demon")) else 50,
-    # PS: (50 + 2*FireWall_level)% MATK per hit. Hit count = vanilla. Ignores 50% MDEF (see mechanic_flag).
+    # PS: (70 + 2*FireWall_level)% MATK per cosmetic hit; (2+2*lv) hits per trigger.
+    # Total ratio = (2+2*lv) * (70+2*fw_lv)%. Hits folded into ratio (cosmetic, no separate multiplier).
     # WZ_FIREPILLAR has a 5-second priming time before activation — relevant to DPS/timing (see gaps.md).
     # FireWall level comes from skill param "WZ_FIREPILLAR_firewall_lv" (user input via dropdown).
-    "WZ_FIREPILLAR":  lambda lv, tgt, ctx=None: 50 + 2 * (ctx.skill_params.get("WZ_FIREPILLAR_firewall_lv", 0) if ctx else 0),
+    "WZ_FIREPILLAR":  lambda lv, tgt, ctx=None: (2 + 2 * lv) * (70 + 2 * (ctx.skill_params.get("WZ_FIREPILLAR_firewall_lv", 0) if ctx else 0)),
     # WZ_SIGHTRASHER: 100+75*lv (lv1=175%, lv5=475%). Vanilla: 100+20*lv.
     # Source: ps_skill_db.json id=81.
     "WZ_SIGHTRASHER": lambda lv, tgt, ctx=None: 100 + 75 * lv,
@@ -457,6 +458,8 @@ _NJ_HUUJIN_PS_HITS = [1, 2, 2, 3, 3, 4, 5, 6, 7, 8]
 _NJ_KAENSIN_HITS      = [3, 3, 3, 3, 6, 6, 6, 6, 9, 9]
 _NJ_KAENSIN_MULTI_HITS = [1, 1, 1, 1, 2, 2, 2, 2, 3, 3]
 _PS_BF_MAGIC_HIT_COUNT_FN: dict[str, Callable] = {
+    # PS hit counts differ from vanilla: 4/6/8/10/12 for lv1-5 (vs vanilla -3 to -12 for lv1-10).
+    "WZ_FIREPILLAR": lambda lv, tgt, ctx=None: -(2 + 2 * lv),
     "NJ_HUUJIN": lambda lv, tgt, ctx=None: _NJ_HUUJIN_PS_HITS[lv - 1],
     # Multi toggle reads NJ_KAENSIN_multi from ctx.skill_params; falls back to vanilla counts.
     "NJ_KAENSIN": lambda lv, tgt, ctx=None: (
