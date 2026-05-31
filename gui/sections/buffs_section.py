@@ -131,7 +131,7 @@ _SELF_BUFFS: list[tuple] = [
     ("SC_GS_GATLINGFEVER",    "GS_GATLINGFEVER",      True,  1,  10),
     # ── Ninja ─────────────────────────────────────────────────────────────────
     # SC_NJ_NEN: str+=lv; int_+=lv — status_calculator.py (status.c:3962, 4148)
-    ("SC_NJ_NEN",             "NJ_NEN",               True,  1,  10),
+    ("SC_NJ_NEN",             "NJ_NEN",               True,  1,  5),
     # ── Taekwon ───────────────────────────────────────────────────────────────
     # SC_RUN: stub; movement speed +55 (status.c:5375); FLEE effect unconfirmed
     ("SC_RUN",                "TK_RUN",               False, 1,  1),

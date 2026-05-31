@@ -32,6 +32,7 @@ class GearBonuses:
     luk: int = 0
 
     # Combat bonuses
+    weapon_atk_flat: int = 0  # bAtk — flat weapon ATK (added to wa->atk before damage roll)
     batk: int = 0       # bBaseAtk
     hit: int = 0        # bHit
     flee: int = 0       # bFlee

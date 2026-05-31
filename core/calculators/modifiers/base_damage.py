@@ -110,6 +110,18 @@ class BaseDamage:
                 hercules_ref="status.c:7780 val2=val1*10; status.c:4570 watk+=sc->data[SC_VOLCANO]->val2",
             )
 
+        # bAtk: flat weapon ATK from equipment (added to wa->atk, same pipe as SC_IMPOSITIO)
+        # script.c: bonus bAtk,N → sd->bonus.atk → merged into st->rhw.atk in status_calc_pc
+        if gear_bonuses.weapon_atk_flat:
+            atkmax += gear_bonuses.weapon_atk_flat
+            result.add_step(
+                name="bAtk",
+                value=gear_bonuses.weapon_atk_flat,
+                note=f"Equipment: +{gear_bonuses.weapon_atk_flat} weapon ATK",
+                formula=f"atkmax += {gear_bonuses.weapon_atk_flat}",
+                hercules_ref="script.c: bonus bAtk,N → sd->bonus.atk → st->rhw.atk (status_calc_pc)",
+            )
+
         # Arrow ATK: bow-type weapons add ammo ATK to weapon ATK
         # battle.c: sd->arrow_atk contributes to weapon ATK for arrow attacks
         if weapon.weapon_type == "Bow":

@@ -542,6 +542,7 @@
   },
   "2789": {
     "slots": 0,
+    "script": "bonus bAtk,10;\n\t\tbonus bHit,5;\n\t\tbonus bVit,1;",
     "description": "A very tough ring made out of Bradium Ore.<br/>ATK +10, Hit+5, Vit+1<br/>Class:<font color='#6666CC'> Accessory</font><br/>Defense:<font color='#0000FF'> 0</font><br/>Weight:<font color='#009900'> 20</font><br/>Level Requirement:<font color='#009900'> 60</font><br/>Jobs:<font color='#6666CC'> All classes except Novice Classes</font>"
   },
   "2799": {
@@ -3626,7 +3627,8 @@
   "13150": {
     "atk": 70,
     "slots": 4,
-    "description": "A practical firearm<br/>with a long gun barrel<br/>which increases its<br/>range and accuracy.<br/>HIT+10, Critical +10<br/>Class:<font color='#6666CC'> Rifle</font><br/>Attack:<font color='#CC0000'> 70</font><br/>Weight:<font color='#009900'> 50</font><br/>Weapon Level:<font color='#009900'> 1</font><br/>Level Requirement:<font color='#009900'> 1</font><br/>Jobs:<font color='#6666CC'> Gunslinger</font>"
+    "description": "A practical firearm<br/>with a long gun barrel<br/>which increases its<br/>range and accuracy.<br/>HIT+10, Critical +10<br/>Class:<font color='#6666CC'> Rifle</font><br/>Attack:<font color='#CC0000'> 70</font><br/>Weight:<font color='#009900'> 50</font><br/>Weapon Level:<font color='#009900'> 1</font><br/>Level Requirement:<font color='#009900'> 1</font><br/>Jobs:<font color='#6666CC'> Gunslinger</font>",
+    "script": "bonus bHit,10; bonus bCritical,10;"
   },
   "13151": {
     "slots": 2,

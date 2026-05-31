@@ -668,8 +668,8 @@ _PS_ASPD_BUFFS: dict = {
     # Negative delta = faster (aspd_rate reduction).
     # BA_MUSICALLESSON lv10: −10% delay on MusicalInstrument weapons.
     "BA_MUSICALLESSON": {"lv10_rate": {"MusicalInstrument": -100}},
-    # BS_AXEMASTERY lv10: −8% delay on Axe/2HAxe weapons.
-    "BS_AXEMASTERY":    {"lv10_rate": {"Axe": -80, "2HAxe": -80}},
+    # AM_AXEMASTERY lv10: −8% delay on Axe/2HAxe weapons.
+    "AM_AXEMASTERY":    {"lv10_rate": {"Axe": -80, "2HAxe": -80}},
     # PR_MACEMASTERY lv10: −12% delay on Mace and Book weapons.
     "PR_MACEMASTERY":   {"lv10_rate": {"Mace": -120, "Book": -120}},
     # SC_GS_GATLINGFEVER flee suppress in PS.
@@ -778,7 +778,7 @@ _PS_MASTERY_PER_LEVEL: dict = {
     "AS_KATAR":        4,
     "BA_MUSICALLESSON": 5,
     "DC_DANCINGLESSON": 5,
-    "BS_AXEMASTERY":   5,
+    "AM_AXEMASTERY":   5,
     "PR_MACEMASTERY":  4,
 }
 

@@ -285,7 +285,8 @@ class EquipmentBrowserDialog(QDialog):
         filtered_regular = [
             it for it in self._items
             if (not query or query in (it.get("name") or it.get("aegis_name", "")).lower())
-            and (not use_job_filter or not it.get("job") or self._job_id in it["job"])
+            and (not use_job_filter or not it.get("job") or self._job_id in it["job"]
+                 or (self._job_id == 23 and 0 in it["job"]))
             and (show_hidden or not loader.is_item_hidden(it["id"]))
         ]
         # Pinned cards: only name-filtered; always visible regardless of job/hidden filters.

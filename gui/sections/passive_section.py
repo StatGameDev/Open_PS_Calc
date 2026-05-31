@@ -64,7 +64,7 @@ _PASSIVES: list[tuple] = [
     ("AL_DP",            10, "AL_DP"),
     ("SM_RECOVERY",      10, "SM_RECOVERY"),
     ("MG_SRECOVERY",     10, "MG_SRECOVERY"),
-    ("NJ_NINPOU",         4, "NJ_NINPOU"),
+    ("NJ_NINPOU",        10, "NJ_NINPOU"),
     ("NJ_TOBIDOUGU",     10, "NJ_TOBIDOUGU"),
     # dual-wield penalty reducers — visible only for Assassin / Assassin Cross
     ("AS_RIGHT",          5, "AS_RIGHT"),

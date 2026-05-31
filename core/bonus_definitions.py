@@ -153,6 +153,7 @@ BONUS1: dict[str, BonusDef] = {
     ),
 
     # Flat combat
+    "bAtk":      BonusDef(lambda v: f"Weapon ATK +{v}." if v > 0 else f"Weapon ATK {v}.", "weapon_atk_flat"),
     "bBaseAtk":  BonusDef(lambda v: f"ATK +{v}." if v > 0 else f"ATK {v}.", "batk"),
     "bMatk":     BonusDef(lambda v: f"MATK +{v}." if v > 0 else f"MATK {v}."),  # display-only — MATK flat bonus not modelled in pipeline
     "bHit":      BonusDef(lambda v: f"HIT +{v}." if v > 0 else f"HIT {v}.", "hit"),
