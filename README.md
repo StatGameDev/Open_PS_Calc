@@ -43,7 +43,8 @@ issue with your build save file, skill name and parameters, and observed damage.
 
 ## Status
 
-Active development. Back at it again, currently working through the core issues all the lovely testers found. Doing GUI work on the side as I get familiar with my own code again lol.
+Active development. First public release. Expect gaps in skill coverage; see open issues once I consolidate and push them.
+No real GUI changes since the Alpha, I just wanted to push a functional version ASAP.
 
 ---
 

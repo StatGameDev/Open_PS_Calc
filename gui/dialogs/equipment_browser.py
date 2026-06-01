@@ -25,6 +25,24 @@ from PySide6.QtWidgets import (
 
 from core.data_loader import loader
 
+
+def job_allows(job_id: int, item_jobs: list[int]) -> bool:
+    """Return True if job_id may equip an item whose job list is item_jobs.
+
+    Empty item_jobs means unrestricted. Super Novice (23) inherits Novice (0)
+    access because vanilla item_db only lists 0 for Novice-restricted items.
+    All other job inheritance is already expanded in item_db (e.g. Swordsman
+    items explicitly list Knight and Crusader IDs).
+    """
+    if not item_jobs:
+        return True
+    if job_id in item_jobs:
+        return True
+    if job_id == 23 and 0 in item_jobs:
+        return True
+    return False
+
+
 # Scraped VanillaData identification line present on every item — stripped from display.
 _IDENTIFICATION_LINE = "Unknown Item, can be identified by using a Magnifier."
 
@@ -285,8 +303,7 @@ class EquipmentBrowserDialog(QDialog):
         filtered_regular = [
             it for it in self._items
             if (not query or query in (it.get("name") or it.get("aegis_name", "")).lower())
-            and (not use_job_filter or not it.get("job") or self._job_id in it["job"]
-                 or (self._job_id == 23 and 0 in it["job"]))
+            and (not use_job_filter or job_allows(self._job_id, it.get("job", [])))
             and (show_hidden or not loader.is_item_hidden(it["id"]))
         ]
         # Pinned cards: only name-filtered; always visible regardless of job/hidden filters.

@@ -28,6 +28,7 @@ from PySide6.QtWidgets import (
 
 from core.data_loader import loader
 from core.models.build import PlayerBuild
+from gui.dialogs.equipment_browser import job_allows
 from gui.section import Section
 from gui.widgets import NoScrollCombo, NoWheelSpin
 
@@ -225,7 +226,7 @@ def _load_slot_items(
     filtered = [
         it for it in items
         if any(loc in valid_locs for loc in it.get("loc", []))
-        and (job_id is None or not it.get("job") or job_id in it.get("job", []))
+        and (job_id is None or job_allows(job_id, it.get("job", [])))
         and not loader.is_item_hidden(it["id"])
     ]
     filtered.sort(key=lambda it: it.get("name", it.get("aegis_name", "")))
