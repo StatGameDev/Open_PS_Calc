@@ -101,7 +101,8 @@ class GrandCrossPipeline:
 
         # BaseDamage
         # battle_calc_base_damage2: ATK roll (weapon + status ATK; SizeFix internal)
-        pmf_w = BaseDamage.calculate(status, weapon, build, target, skill, result_w)
+        pmf_w = BaseDamage.calculate(status, weapon, build, target, skill, result_w,
+                                     gear_bonuses=gear_bonuses)
 
         # bWeaponAtk (battle.c:676-686)
         _herc_wtype = _WEAPON_TYPE_TO_HERC.get(weapon.weapon_type, "")

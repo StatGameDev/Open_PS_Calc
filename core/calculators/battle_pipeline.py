@@ -1368,7 +1368,9 @@ class BattlePipeline:
             # SizeFix is applied inside this step before batk (A4 fix).
             # Crit branch: damage = atkmax (no roll). Overrefine still randomizes.
             pmf: dict = BaseDamage.calculate(status, weapon, build, target, skill, result,
-                                             is_crit=is_crit)
+                                             gear_bonuses=gear_bonuses,
+                                             is_crit=is_crit,
+                                             is_ranged=is_ranged)
 
             # === bWeaponAtk — inside battle_calc_base_damage2 after overrefine ===
             # battle.c:676-686: if (sd->weapon_atk_rate[weapontype]) damage += damage * rate / 100;

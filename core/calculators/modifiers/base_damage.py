@@ -4,8 +4,17 @@ from core.models.build import PlayerBuild
 from core.models.target import Target
 from core.models.skill import SkillInstance
 from core.models.damage import DamageResult
+from core.models.gear_bonuses import GearBonuses
 from core.data_loader import loader
 from pmf.operations import _uniform_pmf, _scale_floor, _add_flat, _convolve, pmf_stats
+
+# Weapon types that receive the bow atkmin scaling (battle.c:640-644, flag&2 && !flag&16).
+# Matches W_BOW and W_REVOLVER–W_GRENADE in Hercules. All other weapon types that happen
+# to fire arrows (e.g. ninja skills) fall into the flag&16 path: stochastic arrow ATK
+# is still applied via is_ranged, but the atkmin scaling is skipped.
+_ARROW_BOW_GUN_TYPES: frozenset[str] = frozenset({
+    "Bow", "Revolver", "Rifle", "Gatling", "Shotgun", "Grenade",
+})
 
 
 class BaseDamage:
@@ -19,10 +28,12 @@ class BaseDamage:
     # Hercules battle_calc_base_damage2 computation order for PC attacks:
     #   1. Weapon ATK range:   rnd() % (atkmax - atkmin) + atkmin  → [atkmin, atkmax-1]
     #      atkmax = wa->atk; atkmin = st->dex*(80+wlv*20)/100, capped to atkmax
-    #   2. SizeFix:            damage * atkmods[t_size] / 100  (weapon ATK only)
-    #   3. batk:               damage += st->batk
-    #   4. Refine bonus:       damage += sd->right_weapon.atk2   (deterministic, handled by RefineFix)
-    #   5. Overrefine:         damage += rnd()%sd->right_weapon.overrefine+1  (if overrefine > 0)
+    #      Bow/gun (flag&2 && !flag&16): atkmin = atkmin*atkmax/100 (reverse cap: atkmax raised)
+    #   2. Arrow ATK:          damage += rnd()%sd->bonus.arrow_atk (non-crit) / full (crit)
+    #   3. SizeFix:            damage * atkmods[t_size] / 100  (weapon ATK + arrow ATK combined)
+    #   4. batk:               damage += st->batk
+    #   5. Refine bonus:       damage += sd->right_weapon.atk2   (deterministic, handled by RefineFix)
+    #   6. Overrefine:         damage += rnd()%sd->right_weapon.overrefine+1  (if overrefine > 0)
 
     @staticmethod
     def calculate(status: StatusData,
@@ -31,7 +42,9 @@ class BaseDamage:
                   target: Target,
                   skill: SkillInstance,
                   result: DamageResult,
-                  is_crit: bool = False) -> dict:
+                  gear_bonuses: GearBonuses,
+                  is_crit: bool = False,
+                  is_ranged: bool = False) -> dict:
         """Computes the initial PMF, applies SizeFix internally before batk,
         and logs Weapon ATK Range, Size Fix, and Base Damage steps.
 
@@ -122,29 +135,34 @@ class BaseDamage:
                 hercules_ref="script.c: bonus bAtk,N → sd->bonus.atk → st->rhw.atk (status_calc_pc)",
             )
 
-        # Arrow ATK: bow-type weapons add ammo ATK to weapon ATK
-        # battle.c: sd->arrow_atk contributes to weapon ATK for arrow attacks
-        if weapon.weapon_type == "Bow":
+        # Arrow ATK: resolved here, applied after the weapon ATK roll and before SizeFix.
+        # battle.c:658-660: damage += ((flag&1) ? sd->bonus.arrow_atk : rnd()%sd->bonus.arrow_atk)
+        # Applies to any ranged attack (is_ranged covers bow, guns, and ninja throwing skills).
+        # atkmax is NOT mutated here.
+        arrow_atk = 0
+        ammo_id = None
+        if is_ranged:
             ammo_id = build.equipped.get("ammo")
             if ammo_id is not None:
                 ammo = loader.get_item(ammo_id)
                 if ammo and ammo.get("type") == "IT_AMMO":
                     arrow_atk = ammo.get("atk", 0)
-                    if arrow_atk:
-                        atkmax += arrow_atk
-                        result.add_step(
-                            name="Arrow ATK",
-                            value=arrow_atk,
-                            note=f"Ammo ID {ammo_id}: +{arrow_atk} ATK added to weapon ATK",
-                            formula=f"atkmax += ammo.atk = {arrow_atk}",
-                            hercules_ref="battle.c: sd->arrow_atk contributes to weapon ATK for bow attacks",
-                        )
 
         # PC normal-attack atkmin: st->dex scaled by weapon level
         # battle.c:635: atkmin = atkmin*(80 + wlv*20)/100  (verified A7 — correct)
         atkmin = status.dex * (80 + wlv * 20) // 100
         if atkmin > atkmax:
             atkmin = atkmax                             # cap — mirrors Hercules guard
+
+        # Bow/gun atkmin scaling (battle.c:640-644, flag&2 && !flag&16):
+        #   atkmin = atkmin * atkmax / 100
+        # Reverse cap: if scaled atkmin > atkmax, atkmax is raised (not atkmin clamped).
+        # flag&16 weapons (e.g. ninja throwing skills) skip this block — handled by
+        # is_ranged being True while weapon_type is not in _ARROW_BOW_GUN_TYPES.
+        if weapon.weapon_type in _ARROW_BOW_GUN_TYPES:
+            atkmin = atkmin * atkmax // 100
+            if atkmin > atkmax:
+                atkmax = atkmin
 
         # SC_MAXIMIZEPOWER: collapses atkmin to atkmax (no weapon ATK variance)
         # battle.c: if (sc && sc->data[SC_MAXIMIZEPOWER]) atkmin = atkmax;
@@ -166,12 +184,13 @@ class BaseDamage:
 
         crit_note = "  (CRIT: forced to atkmax — no roll)" if is_crit else ""
         maximize_note = "  (SC_MAXIMIZEPOWER: collapsed to atkmax)" if maximize_active else ""
+        bow_note = "  (bow scaling: atkmin = atkmin*atkmax//100)" if weapon.weapon_type in _ARROW_BOW_GUN_TYPES else ""
         result.add_step(
             name="Weapon ATK Range",
             value=w_avg,
             min_value=w_min,
             max_value=w_max,
-            note=f"atkmin={atkmin}  atkmax={atkmax}{crit_note}{maximize_note}",
+            note=f"atkmin={atkmin}  atkmax={atkmax}{crit_note}{maximize_note}{bow_note}",
             formula=(f"CRIT: damage = atkmax = {atkmax}" if is_crit
                      else f"atkmin = dex*{80+wlv*20}//100 = {atkmin};  range = [atkmin, atkmax-1]"),
             hercules_ref=("battle.c battle_calc_base_damage2 ~line 648: if(flag&1) damage = atkmax;"
@@ -179,6 +198,28 @@ class BaseDamage:
                           "battle.c battle_calc_base_damage2 ~line 652:\n"
                           "damage = (atkmax>atkmin ? rnd()%(atkmax-atkmin) : 0) + atkmin;")
         )
+
+        # Arrow ATK — applied after the weapon ATK roll, before SizeFix.
+        # battle.c:658-660: range is [0, arrow_atk-1] on non-crit; full value on crit.
+        # SizeFix then applies to the combined weapon+arrow total, as in Hercules.
+        if arrow_atk > 0:
+            if is_crit:
+                pmf = _add_flat(pmf, arrow_atk)
+            else:
+                pmf = _convolve(pmf, _uniform_pmf(0, arrow_atk - 1))
+            a_min, a_max, a_avg = pmf_stats(pmf)
+            result.add_step(
+                name="Arrow ATK",
+                value=a_avg,
+                min_value=a_min,
+                max_value=a_max,
+                note=(f"Ammo ID {ammo_id}: +{arrow_atk} ATK (CRIT: fixed value)"
+                      if is_crit else
+                      f"Ammo ID {ammo_id}: rnd()%{arrow_atk} → [0,{arrow_atk - 1}]"),
+                formula=(f"damage += {arrow_atk}" if is_crit else f"damage += rnd()%{arrow_atk}"),
+                hercules_ref="battle.c:658-660: if (flag&2 && sd->bonus.arrow_atk)\n"
+                             "    damage += ((flag&1) ? sd->bonus.arrow_atk : rnd()%sd->bonus.arrow_atk);",
+            )
 
         # Size Fix — applied inside battle_calc_base_damage2 for PC, BEFORE batk is added.
         # battle.c lines 659-664:
