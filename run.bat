@@ -8,7 +8,7 @@ if %errorlevel% neq 0 (
     exit /b 1
 )
 if not exist Open_PS_Calc_venv\ (
-    python -m venv create Open_PS_Calc_venv
+    python -m venv Open_PS_Calc_venv
     .\Open_PS_Calc_venv\Scripts\python.exe -m pip install --no-cache-dir -r requirements.txt
 )
 .\Open_PS_Calc_venv\Scripts\python.exe main.py
