@@ -7,5 +7,6 @@ if %errorlevel% neq 0 (
     pause
     exit /b 1
 )
-python -m pip install -r requirements.txt --quiet
-python main.py
+python -m venv create Open_PS_Calc_venv
+.\Open_PS_Calc_venv\bin\python.exe -m pip install --no-cache-dir -r requirements.txt
+.\Open_PS_Calc_venv\bin\python.exe main.py

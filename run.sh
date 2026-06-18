@@ -17,7 +17,7 @@ if (( "$PYTHON_MAJVER" == 3 && "PYTHON_MINVER" >= 13 )); then
 
 	if [ ! -d "./$VENV_NAME" ]; then
 		$PYTHON_COMMAND -m venv create $VENV_NAME
-		./$VENV_NAME/bin/python -m pip install -r requirements.txt
+		./$VENV_NAME/bin/python -m pip install --no-cache-dir -r requirements.txt
 	fi
 
 	PYTHON_COMMAND="./$VENV_NAME/bin/python"
